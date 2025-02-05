@@ -1,15 +1,13 @@
 import csv
 import json
 
+filecsv = './data.csv'
+filejson = './data.json'
 
-filescsv = ['./data.csv']
-filesjson = ['./data.json']
-
-
-def parse_csv(filescsv):
+def parse_csv(filecsv):
     text = ''
     try:
-        with open(filescsv, 'r', encoding='utf-8', errors='replace') as file:
+        with open(filecsv, 'r', encoding='utf-8', errors='replace') as file:
             reader = csv.reader(file)
             for row in reader:
                 text += ' '.join(row) + '\n'
@@ -18,12 +16,12 @@ def parse_csv(filescsv):
         return ''
     return text
     
-print("CSV:\n",parse_csv(filescsv[0]))
+print("CSV:\n", parse_csv(filecsv))
 
-def parse_json(filesjson):
+def parse_json(filejson):
     text = ''
     try:
-        with open(filesjson, 'r', encoding='utf-8', errors='replace') as file:
+        with open(filejson, 'r', encoding='utf-8', errors='replace') as file:
             data = json.load(file)
             for key, value in data.items():
                 text += f'{key}: {value}\n'
@@ -32,4 +30,4 @@ def parse_json(filesjson):
         return ''
     return text
     
-print("JSON:\n",parse_json(filesjson[0]))
+print("JSON:\n", parse_json(filejson))
