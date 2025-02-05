@@ -7,29 +7,5 @@
         "city": "Anytown",
         "state": "CA",
         "postalCode": "12345"
-    },
-    "phoneNumbers": [
-        {
-            "type": "home",
-            "number": "555-555-5555"
-        },
-        {
-            "type": "work",
-            "number": "555-555-5556"
-        }
-    ],
-    "children": [
-        {
-            "name": "Jane Doe",
-            "age": 10
-        },
-        {
-            "name": "Jim Doe",
-            "age": 8
-        }
-    ],
-    "spouse": {
-        "name": "Jane Smith",
-        "age": 28
     }
 }
