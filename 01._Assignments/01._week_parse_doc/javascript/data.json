@@ -1,0 +1,42 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john.doe@example.com",
+            "age": 30
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane.smith@example.com",
+            "age": 25
+        },
+        {
+            "id": 3,
+            "name": "Emily Johnson",
+            "email": "emily.johnson@example.com",
+            "age": 35
+        }
+    ],
+    "products": [
+        {
+            "id": 101,
+            "name": "Laptop",
+            "price": 999.99,
+            "quantity": 50
+        },
+        {
+            "id": 102,
+            "name": "Smartphone",
+            "price": 699.99,
+            "quantity": 100
+        },
+        {
+            "id": 103,
+            "name": "Tablet",
+            "price": 399.99,
+            "quantity": 75
+        }
+    ]
+}
