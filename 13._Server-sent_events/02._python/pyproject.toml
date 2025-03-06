@@ -1,0 +1,22 @@
+[project]
+name = "02-python"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "SimonBD1",email = "simo20k3@stud.kea.dk"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.115.11,<0.116.0)",
+    "uvicorn (>=0.34.0,<0.35.0)",
+    "jinja2 (>=3.1.6,<4.0.0)",
+]
+
+[tool.poetry]
+packages = [{include = "02"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

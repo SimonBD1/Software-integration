@@ -4,4 +4,6 @@ console.log(new Date().toLocaleString()); // Local time
 console.log(new Date().toUTCString()); // UTC time
 console.log(new Date().toISOString()); // ISO 8601
 
-danishdate = new Date().toLocaleString('da-DK', { timeZone: 'Europe/Copenhagen' }); // 
+danishdate = new Date().toLocaleString("da-DK", {
+  timeZone: "Europe/Copenhagen",
+}); //

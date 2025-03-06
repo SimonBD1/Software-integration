@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SSE</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Server-sent Events (SSE)</h1>
 
     <p>Status:</p>
@@ -13,31 +13,30 @@
 
     <p>Time:</p>
     <div id="server-sent_time"></div>
-</body>
-<script>
-const serverSentStatusDiv = document.getElementById('server-sent_status');
-const serverSentTimeDiv = document.getElementById('server-sent_time');
+  </body>
+  <script>
+    const serverSentStatusDiv = document.getElementById("server-sent_status");
+    const serverSentTimeDiv = document.getElementById("server-sent_time");
 
-const eventSource = new EventSource('/synchronizetime');
-eventSource.addEventListener("message", event => {
-    console.log(event.data);
-    serverSentTimeDiv.textContent = event.data;
-});
+    const eventSource = new EventSource("/synchronizetime");
+    eventSource.addEventListener("message", (event) => {
+      console.log(event.data);
+      serverSentTimeDiv.textContent = event.data;
+    });
 
-eventSource.addEventListener("open", event => {
-    console.log('Connected');
-    serverSentStatusDiv.textContent = 'Connected';
-});
+    eventSource.addEventListener("open", (event) => {
+      console.log("Connected");
+      serverSentStatusDiv.textContent = "Connected";
+    });
 
-eventSource.addEventListener("error", (event) => {
-if (event.target.readyState === EventSource.CLOSED) {
-    serverSentStatusDiv.textContent = 'Connection was closed';
-} else if (event.target.readyState === EventSource.CONNECTING) {
-    serverSentStatusDiv.textContent = 'Connecting...';
-} else {
-    serverSentStatusDiv.textContent = 'Error';
-    }
-});
-
-</script>
+    eventSource.addEventListener("error", (event) => {
+      if (event.target.readyState === EventSource.CLOSED) {
+        serverSentStatusDiv.textContent = "Connection was closed";
+      } else if (event.target.readyState === EventSource.CONNECTING) {
+        serverSentStatusDiv.textContent = "Connecting...";
+      } else {
+        serverSentStatusDiv.textContent = "Error";
+      }
+    });
+  </script>
 </html>

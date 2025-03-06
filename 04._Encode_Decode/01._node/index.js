@@ -1,4 +1,4 @@
-const message = 'Hello World!';
+const message = "Hello World!";
 const encodedMessage = btoa(message);
 console.log(encodedMessage);
 

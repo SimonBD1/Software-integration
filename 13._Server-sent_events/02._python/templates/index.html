@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSE FastApi</title>
+</head>
+<body>
+    <h1>Server-sent Events (SSE)</h1>
+    <div id="date"></div>
+
+    <script>
+        const dateDiv = document.getElementById('date');
+        const eventSource = new EventSource('/sse2');
+        eventSource.onmessage = (event) => {
+            dateDiv.textContent = event.data;
+            
+        }
+    </script>
+</body>
+</html>

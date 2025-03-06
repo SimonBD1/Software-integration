@@ -1,6 +1,6 @@
 class ClassA {
-    constructor() {
-      console.log('ClassA initialized');
-    }
+  constructor() {
+    console.log("ClassA initialized");
   }
-  module.exports = ClassA;
+}
+module.exports = ClassA;

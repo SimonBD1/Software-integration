@@ -1,30 +1,30 @@
-import express from 'express';
+import express from "express";
 
 const app = express();
 
 let clients = [];
 
 app.get("/events/subscribe", (req, res) => {
-res.setHeader('Content-Type', 'application/json');
-res.setHeader('Cache-Control', 'no-cache');
-res.setHeader('Connection', 'keep-alive');
+  res.setHeader("Content-Type", "application/json");
+  res.setHeader("Cache-Control", "no-cache");
+  res.setHeader("Connection", "keep-alive");
 
-clients.push(res);
+  clients.push(res);
 
-req.on('close', () => {
+  req.on("close", () => {
     clients = clients.filter((client) => client !== res);
-});
+  });
 });
 
 app.get("/events/publish", (req, res) => {
-    const message = { data: "This is a dinmor message" };
-    clients.forEach((client) => {
-        client.send(message);
-    });
+  const message = { data: "This is a dinmor message" };
+  clients.forEach((client) => {
+    client.send(message);
+  });
 
-    clients = [];
+  clients = [];
 
-    res.status(204).end();
+  res.status(204).end();
 });
 
 const PORT = 8080;
