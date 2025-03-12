@@ -16,7 +16,7 @@ Dette projekt er designet til at understøtte to roller: Exposer (den, der hoste
 ### Oprettelse af sql databasen, og deploye til docker (Exposer)
 
 1) Lav en init.sql der indeholder din database opsætning (kopier min).
-2) Sørg for at have docker installeret på din Computer. Følg guiden på  <a href="www.docker.com">deres hjemmeside</a>.
+2) Sørg for at have docker installeret på din Computer. Følg guiden på  [deres hjemmeside](www.docker.com).
 3) Når din docker er installeret, kør dette i din terminal:
 
         docker pull postgres:latest
