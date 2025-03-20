@@ -20,6 +20,6 @@ textarea {
   height: 15vh;
 }
 
-#localVideo #remoteVideo {
+#localVideo, #remoteVideo {
   transform: scaleX(-1);  
 }
