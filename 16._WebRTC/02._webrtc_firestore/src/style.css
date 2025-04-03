@@ -1,0 +1,17 @@
+body {
+  margin:0, auto;
+  padding: 1vh;
+}
+
+#videos {
+  display: flex;
+  gap: 2vw;
+}
+
+video {
+  background-color: grey;
+  width: 49vw;
+  height: auto;
+  transform: scaleX(-1);
+}
+
