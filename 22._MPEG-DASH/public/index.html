@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.12.6/shaka-player.compiled.js"
+      integrity="sha512-tFq8ZxX0hhNnwiPQFvCZVNEXj4jwMo1Lp9r5rLr3aeZk/+rKPmOGiBr2n7tCnHbrY3/RuYu1KUTZwpKWOwmDOw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>MPEG-DASH</title>
+  </head>
+  <body>
+    <video
+      id="video-player"
+      controls
+      autoplay
+      muted
+      style="width: 98vw; height: 98vh; background-color: black"
+    ></video>
+
+    <script>
+      const video = document.getElementById("video-player");
+      const player = new shaka.Player(video);
+
+      async function init() {
+        try {
+          await player.load("playlist.mpd");
+          console.log("Shaka player loaded!");
+        } catch (e) {
+          console.error("Error loading the manifest file", e);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", init);
+
+      player.addEventListener("adaptation", () => {
+        const variant = player.getVariantTracks().find((track) => track.active);
+        console.log(
+          `[SHAKA] Adapted to ${variant.height}p ${variant.bandwidth}bps`
+        );
+      });
+    </script>
+  </body>
+</html>
