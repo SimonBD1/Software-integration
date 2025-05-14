@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>My Stripe Shop</title>
+  <script src="https://js.stripe.com/v3/"></script>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    .product { border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 4px; }
+    button { background: #6772e5; color: #fff; border: none; padding: .5rem 1rem; border-radius: 4px; cursor: pointer; }
+    button:disabled { opacity: .5; cursor: default; }
+  </style>
+</head>
+<body>
+  <h1>My Stripe Shop</h1>
+
+  <div class="product" data-id="prod1">
+    <h2>Red T-Shirt</h2>
+    <p>$20.00</p>
+    <button>Buy</button>
+  </div>
+
+  <div class="product" data-id="prod2">
+    <h2>Blue Hoodie</h2>
+    <p>$45.00</p>
+    <button>Buy</button>
+  </div>
+
+  <div class="product" data-id="prod3">
+    <h2>Green Cap</h2>
+    <p>$15.00</p>
+    <button>Buy</button>
+  </div>
+
+  <script>
+    // 1) Fetch publishable key from your server
+    fetch('/config')
+      .then(r => r.json())
+      .then(({ publishableKey }) => {
+        const stripe = Stripe(publishableKey);
+
+        document.querySelectorAll('.product').forEach(el => {
+          const btn = el.querySelector('button');
+          btn.addEventListener('click', async () => {
+            btn.disabled = true;
+            const res = await fetch('/create-checkout-session', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ productId: el.dataset.id })
+            });
+            const { sessionId, error } = await res.json();
+            if (error) {
+              alert(error);
+              btn.disabled = false;
+              return;
+            }
+            // 2) Redirect to Stripe Checkout
+            const { error: stripeError } = await stripe.redirectToCheckout({ sessionId });
+            if (stripeError) {
+              alert(stripeError.message);
+              btn.disabled = false;
+            }
+          });
+        });
+      })
+      .catch(err => {
+        console.error('Failed to load Stripe key:', err);
+        alert('Could not initialize payment form.');
+      });
+  </script>
+</body>
+</html>
