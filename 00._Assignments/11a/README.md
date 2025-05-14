@@ -1,68 +1,159 @@
-# Sample 01 - Login
+# Doggo Auth Demo
 
-The purpose of this article is to demonstrate how simple it is to set up and use the new Single Page Application SDK, and authenticate a user in your application using Auth0's Universal Login Page.
+A minimal Single-Page Application demonstrating Auth0 authentication in plain JavaScript—when you’re not signed in it prompts you to log in, and once you are it greets you with a friendly dog picture.
 
-## Running the Sample Application
+---
 
-The sample can be run locally, by cloning the repository to your machine and then following the steps below.
+## Table of Contents
 
-### Specifying Auth0 Credentials
+1. **Prerequisites**  
+2. **Auth0 Setup**  
+3. **Project Structure**  
+4. **Installation & Configuration**  
+5. **Running Locally**  
+6. **How It Works**  
+7. **Troubleshooting**  
+8. **FAQ & Resources**  
+9. **License**
 
-To specify the application client ID and domain, make a copy of `auth_config.json.example` and rename it to `auth_config.json`. Then open it in a text editor and supply the values for your application:
+---
 
-```json
-{
-  "domain": "simonbang.eu.auth0.com",
-  "clientId": "Z5uhyFNUtFHG6yNL01uzmi4nXVSM1NSF"
-}
+## Prerequisites
+
+- **Node.js** v16 or later (for the local server)  
+- **npm** (bundled with Node.js)  
+- A free **Auth0** account  
+  1. Sign up at https://auth0.com/signup  
+  2. Verify your email and log in  
+
+---
+
+## Auth0 Setup
+
+1. **Create a new Application**  
+   - In the Auth0 Dashboard, go to **Applications → Applications**, then **Create Application**.  
+   - Name it `DoggoAuthDemo`.  
+   - Choose **Single Page Web Applications**, Select **Javascript** and click **Create**.
+
+2. **Configure Application Settings**  
+   - Under **Settings**, set:  
+     - **Allowed Callback URLs**:  
+       ```
+       http://localhost:3000
+       ```  
+     - **Allowed Logout URLs**:  
+       ```
+       http://localhost:3000
+       ```  
+   - Scroll down and **Save Changes**.  
+   - Copy your **Domain** (e.g. `your-tenant.eu.auth0.com`) and **Client ID** for the next step.
+   - You could also here download the samplecode for an easier start.
+
+
+
+4. **Prepare the client config file**  
+   - In the project’s `public/` folder you’ll find `auth_config.json.example`.  
+   - Copy it to `auth_config.json`:  
+
+   - Edit `public/auth_config.json` and fill in your values:
+     ```json
+     {
+       "domain": "YOUR_AUTH0_DOMAIN",
+       "client_id": "YOUR_CLIENT_ID"
+     }
+     ```
+
+---
+
+## Project Structure
+
+```
+├── public/
+│   ├── auth_config.json.example
+│   ├── auth_config.json       ← you’ll create this
+│   ├── index.html
+│   └── js/
+│       └── app.js
+├── server.js                  ← simple Express static server
+├── package.json
+└── README.md                  ← you are reading this
 ```
 
-### Installation
+---
 
-After cloning the repository, run:
+## Installation & Configuration
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/SimonBD1/Software-integration/tree/main/00._Assignments/11a
+   cd doggo-auth-demo
+   ```
+
+2. **Install dependencies**  
+   ```bash
+   npm install
+   ```
+
+3. **Create your Auth0 config**  
+   As above, copy `public/auth_config.json.example` → `public/auth_config.json` and add your `domain` + `client_id`.
+
+---
+
+## Running Locally
+
+Start the development server (serves `public/` at port 3000):
 
 ```bash
-$ npm install
+npm run dev
 ```
 
-This will install all of the necessary packages in order for the sample to run.
+> **Tip:** If you don’t have `npm run dev` defined, you can also run:
+>
+> ```bash
+> node server.js
+> ```
 
-### Running the Application
+Then open your browser at:
 
-This version of the application uses an [Express](https://expressjs.com) server that can serve the site from a single page. To start the app from the terminal, run:
-
-```bash
-$ npm run dev
+```
+http://localhost:3000
 ```
 
-## Frequently Asked Questions
+---
 
-We are compiling a list of questions and answers regarding the new JavaScript SDK - if you're having issues running the sample applications, [check the FAQ](https://github.com/auth0/auth0-spa-js/blob/master/FAQ.md)!
+## How It Works
 
-## What is Auth0?
+- **index.html**  
+  - Loads Auth0’s SPA SDK UMD build from the CDN.  
+  - Provides a “Log In to See a Dog!” button, a “Log Out” button, a `<div>` for messages, and a placeholder `<img>`.
 
-Auth0 helps you to:
+- **app.js**  
+  1. **configureClient()**  
+     - Fetches `domain` & `client_id` from `/auth_config.json`.  
+     - Calls `createAuth0Client({ domain, client_id, cacheLocation: 'localstorage' })`.  
+  2. **window.onload**  
+     - Initializes Auth0 client.  
+     - Detects redirect (`?code=`), calls `handleRedirectCallback()`, and cleans up the URL.  
+     - Hooks up **Log In** / **Log Out** button handlers.  
+     - Calls **updateUI()** to render the correct message/button/image.  
+  3. **updateUI()**  
+     - Checks `auth0Client.isAuthenticated()`.  
+     - If _not_ authenticated: shows “Hey—you are not logged in. Log in for more features!” + Log In button.  
+     - If authenticated: shows “Welcome back! Here’s a dog for you:” + dog image + Log Out button.
 
-- Add authentication with [multiple authentication sources](https://docs.auth0.com/identityproviders), either social like **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce, among others**, or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS or any SAML Identity Provider**.
-- Add authentication through more traditional **[username/password databases](https://docs.auth0.com/mysql-connection-tutorial)**.
-- Add support for **[linking different user accounts](https://docs.auth0.com/link-accounts)** with the same user.
-- Support for generating signed [Json Web Tokens](https://docs.auth0.com/jwt) to call your APIs and **flow the user identity** securely.
-- Analytics of how, when and where users are logging in.
-- Pull data from other sources and add it to the user profile, through [JavaScript rules](https://docs.auth0.com/rules).
+---
 
-## Create a free Auth0 account
+## Troubleshooting
 
-1. Go to [Auth0](https://auth0.com/signup) and click Sign Up.
-2. Use Google, GitHub or Microsoft Account to login.
+- **`createAuth0Client is not defined`**  
+  - Ensure you’re loading the **UMD** build (e.g. `auth0-spa-js.production.js`) **before** your `app.js` script.  
+  - Verify the `<script>` tag URL is correct (version 1.x, not a non-existent 2.0 path).
 
-## Issue Reporting
+- **400 Bad Request on `/authorize?clientId=…`**  
+  - Double-check your `public/auth_config.json` uses `"client_id"` (snake_case), not `"clientId"`.
 
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
+- **Auth0 Error Page (“Oops! something went wrong”)**  
+  - Confirm **Allowed Callback URLs** in your Auth0 app exactly match `http://localhost:3000`.  
+  - Clear browser cache or try in an incognito window.
 
-## Author
-
-[Auth0](auth0.com)
-
-## License
-
-This project is licensed under the MIT license. See the [LICENSE](LICENSE.txt) file for more info.
+---
