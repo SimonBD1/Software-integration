@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Webhook Manager</title>
+  </head>
+  <body>
+    <h1>Webhook Manager</h1>
+
+    <h2>Register a webhook</h2>
+    <form action="/webhooks/register" method="post">
+      <label>
+        URL:<br />
+        <input type="url" name="url" required style="width: 300px" /> </label
+      ><br /><br />
+      <label>
+        Event Type:<br />
+        <select name="event" required>
+          <option value="payment_received">payment_received</option>
+          <option value="payment_processed">payment_processed</option>
+          <option value="invoice_processing">invoice_processing</option>
+          <option value="invoice_completed">invoice_completed</option>
+        </select> </label
+      ><br /><br />
+      <button type="submit">Register</button>
+    </form>
+
+    <hr />
+
+    <h2>Unregister a webhook</h2>
+    <form action="/webhooks/unregister" method="post">
+      <label>
+        URL:<br />
+        <input type="url" name="url" required style="width: 300px" /> </label
+      ><br /><br />
+      <label>
+        Event Type:<br />
+        <select name="event" required>
+          <option value="payment_received">payment_received</option>
+          <option value="payment_processed">payment_processed</option>
+          <option value="invoice_processing">invoice_processing</option>
+          <option value="invoice_completed">invoice_completed</option>
+        </select> </label
+      ><br /><br />
+      <button type="submit">Unregister</button>
+    </form>
+    <hr />
+    <hr />
+
+    <h2>Send Test Ping</h2>
+    <label>
+      Event Type:<br />
+      <select id="pingEvent">
+        <option value="">(all events)</option>
+        <option value="payment_received">payment_received</option>
+        <option value="payment_processed">payment_processed</option>
+        <option value="invoice_processing">invoice_processing</option>
+        <option value="invoice_completed">invoice_completed</option>
+      </select> </label
+    ><br /><br />
+
+    <label>
+      Payload (JSON):<br />
+      <textarea id="pingPayload" rows="5" cols="50">{}</textarea></label
+    ><br /><br />
+
+    <button id="pingBtn">Send Ping</button>
+
+    <h3>Response:</h3>
+    <pre id="pingResult" style="background: #f4f4f4; padding: 8px"></pre>
+
+    <script>
+      document.getElementById("pingBtn").addEventListener("click", async () => {
+        let event = document.getElementById("pingEvent").value;
+        let payloadText = document.getElementById("pingPayload").value;
+        let payload;
+        try {
+          payload = JSON.parse(payloadText);
+        } catch (e) {
+          return alert("Payload is not valid JSON");
+        }
+
+        let body = {};
+        if (event) body.event = event;
+        body.payload = payload;
+
+        try {
+          let res = await fetch("/webhooks/ping", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+          });
+          let json = await res.json();
+          document.getElementById("pingResult").textContent = JSON.stringify(
+            json,
+            null,
+            2
+          );
+        } catch (err) {
+          document.getElementById("pingResult").textContent = "Error: " + err;
+        }
+      });
+    </script>
+  </body>
+</html>
