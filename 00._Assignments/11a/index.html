@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Doggo Auth Demo</title>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19.2/auth0-spa-js.production.js"></script>
+    <script defer src="js/app.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 2rem;
+      }
+      #dog-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        border-radius: 8px;
+      }
+      button {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        margin: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Doggo Auth Demo</h1>
+    <div id="message">Loading…</div>
+
+    <button id="login-btn" hidden>Log In to See a hidden features!</button>
+    <button id="logout-btn" hidden>Log Out</button>
+
+    <!-- will show after login -->
+    <img
+      id="dog-image"
+      src="https://placedog.net/600/400"
+      alt="A friendly dog"
+      hidden
+    />
+  </body>
+</html>
