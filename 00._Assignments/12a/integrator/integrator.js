@@ -1,4 +1,3 @@
-// receiver.js  (Node ≥18  |  "type":"module" in package.json)
 import express from "express";
 const app = express();
 app.use(express.json());
@@ -6,7 +5,7 @@ app.use(express.json());
 // in‑memory event log
 const events = [];
 
-/* POST /hook  ← your Exposee server will hit this */
+//POST /hook  ← your Exposee server will hit this /
 app.post("/hook", (req, res) => {
   const entry = { time: new Date().toISOString(), payload: req.body };
   events.unshift(entry);          // newest first
@@ -14,9 +13,9 @@ app.post("/hook", (req, res) => {
   res.sendStatus(200);
 });
 
-/* Tiny Web UI  (GET /) */
+//Tiny Web UI  (GET /) 
 app.get("/", (_req, res) => {
-  /* inline HTML is fine for quick tests */
+   //inline HTML is fine for quick tests 
   res.send(`<!DOCTYPE html>
   <meta charset="utf-8"><title>Webhook Log</title>
   <style>
