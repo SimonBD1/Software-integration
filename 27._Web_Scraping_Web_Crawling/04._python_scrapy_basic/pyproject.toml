@@ -1,0 +1,20 @@
+[project]
+name = "04-python-scrapy-basic"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "SimonBD1",email = "simo20k3@stud.kea.dk"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "scrapy (>=2.13.1,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "04"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

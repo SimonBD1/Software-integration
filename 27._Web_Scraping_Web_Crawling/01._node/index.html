@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+ <html lang="da" class="position-relative">
+ <head prefix="og: http://ogp.me/ns#">
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="dns-prefetch" href="//ww2.proshop.dk" />
+         <script>var proshopGtmServerDataLayer = [{}];</script>
+     <script type="module">
+    window.dataLayer = window.dataLayer || [];
+    function getElements() {
+        return document.querySelectorAll('[data-gtm]');
+    }
+    getElements().forEach(el => {
+        window.dataLayer.push(JSON.parse(atob(el.dataset.gtm)));
+    });
+    let btns = document.querySelectorAll('button[data-gtm-item-id]');
+    btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            let gtmId = this.getAttribute('data-gtm-item-id');
+            getElements().forEach(el => {
+                var gtmJson = JSON.parse(atob(el.dataset.gtm));
+                for (var i = 0; i <= gtmJson.ecommerce.items.length; i++) {
+                    if (gtmJson.ecommerce.items[i].item_id !== gtmId) {
+                        continue;
+                    }
+                    window.dataLayer.push({ event: 'add_to_cart', ecommerce: { items: gtmJson.ecommerce.items[i] } });
+                    return;
+                }
+            });
+        },false);
+    });
+    let basketBuyBtn = document.querySelector('#CommerceBasketApp a.site-btn-green');
+    if (basketBuyBtn) {
+        basketBuyBtn.addEventListener('click', function (e) {
+            let basketLines = document.querySelectorAll('#basketLines li input');
+            basketLines.forEach((element) => {
+                let gtmJson = JSON.parse(this.getAttribute("data-gtm-click"));
+                let theId = element.getAttribute("id");
+                for (let index = 0; gtmJson.ecommerce.items.length; index++) {
+                    if (gtmJson.ecommerce.items[index].item_id !== theId) {
+                        continue;
+                    }
+                    gtmJson.ecommerce.items[index].quantity = element.value;
+                    window.dataLayer.push({ ecommerce: null })
+                    window.dataLayer.push(gtmJson);
+                    break;
+                }
+            });
+        });
+    }
+    let paymentTypeButtons = document.getElementsByName("paymentOption");    
+    paymentTypeButtons.forEach(function (paymentTypeButton) {
+        paymentTypeButton.addEventListener('click', function () {
+            window.dataLayer.push({ ecommerce: null })
+            window.dataLayer.push(JSON.parse(atob(paymentTypeButton.getAttribute('data-gtm-payment'))));
+        });
+    });
+</script>
+     <script type="text/javascript">
+    var apps = {};
+    apps.queue = [];
+    apps.register = function (rootContainer, app) {
+        if (typeof registerApp != 'undefined')
+            registerApp(rootContainer, app)
+        else {
+            apps.queue.push({ rootContainer, app });
+        }
+    }
+</script>
+     
+    
+
+     <title>Computer | PC | B&#230;rbar | Laptop &#187; K&#248;b til en skarp pris | Proshop</title>
+              <link rel="canonical" href="https://www.proshop.dk/Baerbar" />
+         <meta property="og:url" content="https://www.proshop.dk/Baerbar" />
+              <meta name="description" content="K&#230;mpe udvalg af computere og b&#230;rbar pc / laptop. B&#229;de til gaming og kontoret. Knivskarpe priser og dag til dag levering!" />
+         <meta property="og:description" content="K&#230;mpe udvalg af computere og b&#230;rbar pc / laptop. B&#229;de til gaming og kontoret. Knivskarpe priser og dag til dag levering!" />
+     <meta property="og:title" content="Computer | PC | B&#230;rbar | Laptop &#187; K&#248;b til en skarp pris | Proshop" />
+     <meta property="og:type" content="website" />
+     <meta property="og:image" content="mstile-310x310.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+     <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196" />
+     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+     <link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128" />
+     <meta name="application-name" content="PROSHOP" />
+     <meta name="msapplication-TileColor" content="#FFFFFF" />
+     <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+     <meta name="msapplication-square70x70logo" content="/mstile-70x70.png" />
+     <meta name="msapplication-square150x150logo" content="/mstile-150x150.png" />
+     <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
+     <meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
+     <meta name="format-detection" content="telephone=no">
+     
+    
+    
+<link rel="stylesheet" href="/dist/Proshop/site.82479114.css">
+    
+
+
+     
+    
+    <link rel="preload" href="/dist/js/shared.d91d41e3.js" as="script">
+<script src="/dist/js/shared.d91d41e3.js" defer></script>
+
+    <script type="text/javascript" src="/Content/v-301117907/scriptsBase.bundle.js" defer></script>
+    <script src="/dist/js/menu.92334d93.js" defer></script>
+
+<script src="/dist/js/common.c941cdb1.js" defer></script>
+
+<script src="/dist/js/showmo.2.4db2c254.js" defer></script>
+
+
+    
+    <script src="/dist/js/productList.89ae6958.js" defer></script>
+
+<script src="/dist/js/showmo.2.4db2c254.js" defer></script>
+
+
+    
+
+
+
+ </head>
+ 
+
+
+<body id="siteContainer" data-version="1.0.9286.20645" data-cnet="1df6b731e6" data-lang="da-DK" data-site="proshop.dk">
+    <noscript><iframe src="//ww2.proshop.dk/ns.html?id=GTM-PCQSS3W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="module">
+(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//ww2.proshop.dk/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PCQSS3W');
+</script>
+
+    
+
+<header id="pageHeader" class="fixed-top w-100">
+    <div class="pl-2 pr-2 ps-container">
+        <div class="ps-container__inner header__template">
+            <div class="header__logo align-items-center">
+                <a href="/" aria-label="Back to Home" id="logohome"><div data-vueapp="campaigns" class="site-logo" id="c9781b337da2f41c690c6b8d11590431b" element-id="9781b337-da2f-41c6-90c6-b8d11590431b" data="e30=">
+</div>
+</a>
+            </div>
+<div class="header__search d-flex flex-nowrap">
+    <div class="header__burger hidden-md hidden-lg mr-2">
+        <button type="button" aria-label="Open menu" id="menu-button" class="pi-sm header__burger-menu navbar-toggle position-relative" aria-expanded="false" aria-haspopup="true" aria-controls="main-menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <p class="header__text m-0 position-relative">Menu</p>
+    </div>
+    <div class="position-relative flex-1">
+        <form action="/" class="d-flex align-items-center" method="GET" role="search">
+           <input type="search" data-action="/ClientPlugins/AutoComplete/SearchResult" id="search-input" class="input__round-lg w-100 site-search" name="s" placeholder="S&#248;g" title="S&#248;g" aria-description="S&#248;g efter produkter" enterkeyhint="search">
+           <button id="btn_clearSearchTerm" class="hidden" type="reset">Ryd</button>
+           <button type="submit" aria-label="S&#248;g efter produkter" class="input__round-btn green d-flex justify-content-center align-items-center"><i class="ki pi-xs pi-search"></i></button>
+        </form>
+    </div>
+</div><div class="header__categories d-flex">
+<a href="/Kundeservice.htm" class="header__icon d-block"><i class="pi-sm pi pi-headphones-b m-auto d-block"></i><p class="header__text m-0">Hjælp</p></a>                <div class="header__icon input__new"><a id="logout" class="hidden btn__no-style dropdown-toggle w-100 position-relative" href="/CustomerCenter/CustomerAccount">
+    <i class="pi-sm pi pi-login m-auto d-block position-relative"><small class='header__number-login position-absolute'><span class="pi-xxs pi pi-check-white"></span></small></i>
+    <p id="loginButtonText" class="hidden-xs hidden-sm header__text m-0">Log ind</p>
+    <p id="loginButtonTextSm" class="hidden-md hidden-lg header__text m-0">Min konto</p>
+</a>
+<button id="openLogin" type="button" class="btn__no-style w-100 position-relative" data-toggle="modal" data-target="#loginModal">
+    <i class="pi-sm pi pi-login m-auto d-block position-relative"></i>
+    <p id="loginButtonText" class="hidden-xs hidden-sm  hidden-sm header__text m-0">Log ind</p>
+    <p id="loginButtonTextSm" class="hidden-md hidden-lg header__text m-0">Log ind</p>
+</button></div><div class="header__icon">
+<div id="minibasket" data-customerid>
+<form action="/Basket" class="form-horizontal" method="get">        <button type="submit" class="btn__no-style position-relative w-100" id="btnBasket"><i class="pi-sm pi pi-basket m-auto position-relative d-block"><small data-minibasketlinecount></small></i><p class="hidden-xs hidden-sm header__text m-0" data-minibasketprice data-toggle="tooltip" data-placement="bottom"></p><p class="hidden-md hidden-lg header__text m-0">Kurv</p></button>
+</form></div></div>
+            </div>
+        </div>
+    </div>
+    
+
+
+<section class="menu-top hidden-xs hidden-sm position-absolute w-100">
+    <div class="pl-2 pr-2 ps-container">
+        <div class="d-flex flex-nowrap">
+                <a class="menu-top__cta menu-top__cta--bf" href="/Baerbar">B&#230;rbar</a>
+                <a class="menu-top__cta menu-top__cta--bf" href="/Gaming">Gaming</a>
+                <a class="menu-top__cta menu-top__cta--bf" href="/Mobil">Mobil</a>
+                <a class="menu-top__cta menu-top__cta--bf" href="/Smart-Home">Smart Home</a>
+                <a class="menu-top__cta menu-top__cta--bf" href="/SSD">SSD</a>
+                            <div class="menu-top__cta menu-top__cta--bf"><a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/Hus-Have">Hus & Have</a> <a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/SUPER-DAYS">SUPER DAYS</a> <a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/dutzo-computere">DUTZO Gaming</a> <a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/Erhverv">Erhverv</a> <a data-action="campaignClick" data-id="096e58a2-c1cf-4ac1-a2a3-1f17e258a656" data-name="TOP MENU" data-creative="8134364b-196b-4c0a-8c9f-36a740e19cf8" data-position="top-menu" href="/Gavekort/Gavekort/100001">Gavekort</a></div>
+        </div>
+    </div>
+</section>
+
+
+</header><div id="search-result" class="position-relative"></div>
+        <div class="site-background-banner visible-lg"><div data-vueapp="campaigns" class="site-background-skin" id="c31ddec46ab7a4bdf874220acbbb56e1f" element-id="31ddec46-ab7a-4bdf-8742-20acbbb56e1f" data="e30=">
+</div>
+</div>
+    
+    
+
+    <div class="site-container-fullwidth">
+        <div class="top-banner-container visible-sm">
+            <div class="site-top-banner d-flex justify-content-center align-items-center"><div data-vueapp="campaigns" class="site-top" id="c924612e2d48a446abd250e87659aea99" element-id="924612e2-d48a-446a-bd25-0e87659aea99" data="e30=">
+</div>
+</div>
+        </div>
+            <div class="visible-xs site-top-banner-mobile"><div data-vueapp="campaigns" class="site-top-small" id="cd28a52bf0bcd4edea035011352deadf6" element-id="d28a52bf-0bcd-4ede-a035-011352deadf6" data="e30=">
+</div>
+</div>
+    <div class="container site-container ps-container position-relative px-2 pt-1 hasTopBanner">
+        
+
+        
+        
+<div class="site-content-table row">
+    <div class="col-xs-12 col-md-3 p-0">
+        <aside id="Site-menu" class="position-relative">
+    
+    <nav class="site-mainMenu position-relative" :class="[{'ismobile' : isMobile}, { active: active}]" aria-label="Main menu" @mouseleave="throttleLeaveMenu(menuTimer);" :menulevel="menulevel">
+        <div v-if="isMobile" class="site-mainMenuMobileTitle">
+            <div class="site-mainMenuMobileLogo">
+                <a href="/" aria-label="Back to Home">    <div class="site-campaignElement" data-campaign-element-id="9781b337-da2f-41c6-90c6-b8d11590431b">
+        <img src="/Images/proshop_logo_tagline_new_outlined_med_opacity_3684c4325e81.svg" />
+    </div>
+</a>
+            </div>
+            <button type="button" @click="hideMobileMenu" aria-label="Close" class="justify-self-end"><i aria-hidden="true" class="pi pi-close"></i></button>
+        </div>
+        <ul class="site-mainMenuItems d-flex" id="main-menu" role="menu" aria-labelledby="menu-button">
+                            <li class="outlet d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_Outlet'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_Outlet', 'Auktion &amp; Outlet', 'Auktion-Outlet', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Outlet', 'Auktion &amp; Outlet', 'Auktion-Outlet', columns);">
+                                <i data-bg="/Content/images/SVG/outlet.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Auktion-Outlet" role="menuitem" tabindex="0">Auktion &amp; Outlet</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_Outlet' }"></i>
+                            </li>
+                            <li class="campaign d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'campaigns'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('campaigns', 'Kampagner', 'campaigns', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('campaigns', 'Kampagner', 'campaigns', columns);">
+                                <i data-bg="/Content/images/SVG/campaigns.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/campaigns" role="menuitem" tabindex="0">Kampagner</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'campaigns' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'boger'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('boger', 'B&#248;ger', 'Boeger', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('boger', 'B&#248;ger', 'Boeger', columns);">
+                                <i data-bg="/Content/images/SVG/boger.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Boeger" role="menuitem" tabindex="0">B&#248;ger</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'boger' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_SpilFilm'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_SpilFilm', 'B&#248;rn &amp; Leget&#248;j', 'Boern-Legetoej', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_SpilFilm', 'B&#248;rn &amp; Leget&#248;j', 'Boern-Legetoej', columns);">
+                                <i data-bg="/Content/images/SVG/spilfilm.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Boern-Legetoej" role="menuitem" tabindex="0">B&#248;rn &amp; Leget&#248;j</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_SpilFilm' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_Computer'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_Computer', 'Computer', 'Computer', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Computer', 'Computer', 'Computer', columns);">
+                                <i data-bg="/Content/images/SVG/computer.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Computer" role="menuitem" tabindex="0">Computer</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_Computer' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'pets'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('pets', 'Dyreartikler', 'Dyreartikler', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('pets', 'Dyreartikler', 'Dyreartikler', columns);">
+                                <i data-bg="/Content/images/SVG/pets.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Dyreartikler" role="menuitem" tabindex="0">Dyreartikler</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'pets' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_Belysning'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_Belysning', 'El &amp; VVS', 'El-VVS', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Belysning', 'El &amp; VVS', 'El-VVS', columns);">
+                                <i data-bg="/Content/images/SVG/belysning.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/El-VVS" role="menuitem" tabindex="0">El &amp; VVS</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_Belysning' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_FotoVideo'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_FotoVideo', 'Foto &amp; Video', 'Foto-Video', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_FotoVideo', 'Foto &amp; Video', 'Foto-Video', columns);">
+                                <i data-bg="/Content/images/SVG/fotovideo.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Foto-Video" role="menuitem" tabindex="0">Foto &amp; Video</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_FotoVideo' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_Hardware'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_Hardware', 'Hardware', 'Hardware', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Hardware', 'Hardware', 'Hardware', columns);">
+                                <i data-bg="/Content/images/SVG/hardware.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Hardware" role="menuitem" tabindex="0">Hardware</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_Hardware' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_HusHave'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_HusHave', 'Hus &amp; Have', 'Hus-Have', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_HusHave', 'Hus &amp; Have', 'Hus-Have', columns);">
+                                <i data-bg="/Content/images/SVG/hushave.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Hus-Have" role="menuitem" tabindex="0">Hus &amp; Have</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_HusHave' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_Husholdning'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_Husholdning', 'Husholdning', 'Husholdning', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Husholdning', 'Husholdning', 'Husholdning', columns);">
+                                <i data-bg="/Content/images/SVG/husholdning.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Husholdning" role="menuitem" tabindex="0">Husholdning</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_Husholdning' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_KablerStik'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_KablerStik', 'Kabler &amp; Stik', 'Kabler-Stik', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_KablerStik', 'Kabler &amp; Stik', 'Kabler-Stik', columns);">
+                                <i data-bg="/Content/images/SVG/kablerstik.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Kabler-Stik" role="menuitem" tabindex="0">Kabler &amp; Stik</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_KablerStik' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'office-supplies'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('office-supplies', 'Kontor- og hobbyartikler', 'Kontor-og-hobbyartikler', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('office-supplies', 'Kontor- og hobbyartikler', 'Kontor-og-hobbyartikler', columns);">
+                                <i data-bg="/Content/images/SVG/office-supplies.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Kontor-og-hobbyartikler" role="menuitem" tabindex="0">Kontor- og hobbyartikler</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'office-supplies' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_MobilGPS'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_MobilGPS', 'Mobil &amp; Tablet', 'Mobil-Tablet', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_MobilGPS', 'Mobil &amp; Tablet', 'Mobil-Tablet', columns);">
+                                <i data-bg="/Content/images/SVG/mobilgps.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Mobil-Tablet" role="menuitem" tabindex="0">Mobil &amp; Tablet</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_MobilGPS' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_Netvaerk'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_Netvaerk', 'Netv&#230;rk', 'Netvaerk', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Netvaerk', 'Netv&#230;rk', 'Netvaerk', columns);">
+                                <i data-bg="/Content/images/SVG/netvaerk.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Netvaerk" role="menuitem" tabindex="0">Netv&#230;rk</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_Netvaerk' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_PersonligPleje'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_PersonligPleje', 'Personlig pleje', 'Personlig-pleje', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_PersonligPleje', 'Personlig pleje', 'Personlig-pleje', columns);">
+                                <i data-bg="/Content/images/SVG/personligpleje.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Personlig-pleje" role="menuitem" tabindex="0">Personlig pleje</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_PersonligPleje' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_PrintereForbrugstoffer'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_PrintereForbrugstoffer', 'Printere &amp; Forbrugsstoffer', 'Printere-Forbrugsstoffer', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_PrintereForbrugstoffer', 'Printere &amp; Forbrugsstoffer', 'Printere-Forbrugsstoffer', columns);">
+                                <i data-bg="/Content/images/SVG/printereforbrugstoffer.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Printere-Forbrugsstoffer" role="menuitem" tabindex="0">Printere &amp; Forbrugsstoffer</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_PrintereForbrugstoffer' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_Software'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_Software', 'Software', 'Software', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_Software', 'Software', 'Software', columns);">
+                                <i data-bg="/Content/images/SVG/software.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Software" role="menuitem" tabindex="0">Software</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_Software' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'games-gaming'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('games-gaming', 'Spil &amp; Gaming', 'Spil-Gaming', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('games-gaming', 'Spil &amp; Gaming', 'Spil-Gaming', columns);">
+                                <i data-bg="/Content/images/SVG/games-gaming.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Spil-Gaming" role="menuitem" tabindex="0">Spil &amp; Gaming</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'games-gaming' }"></i>
+                            </li>
+                            <li class=" d-flex align-items-center w-100" role="presentation" :class="[{active: currentCategory == 'Sortiment_TVHifi'}]"
+                                @touchStart="touchDrag = false;"
+                                @touchmove.passive="touchDrag = true;"
+                                @touchend="getMenuItems('Sortiment_TVHifi', 'Tv og lyd', 'Tv-og-lyd', columns, true);"
+                                @mouseleave="isMobile ? false : throttleLeaveMenu"
+                                @mouseover="isMobile ? false : throttleMenu('Sortiment_TVHifi', 'Tv og lyd', 'Tv-og-lyd', columns);">
+                                <i data-bg="/Content/images/SVG/tvhifi.svg" width="25" height="25" class="site-mainMenuItemIcon lazy"></i>
+                                <a class="d-flex" href="/Tv-og-lyd" role="menuitem" tabindex="0">Tv og lyd</a>
+                                <i v-if="isMobile" class="ki-s pi-chev-right svg-fill-red"></i>
+                                <i v-else :class="{'ki-s pi-chev-right svg-fill-red': currentCategory == 'Sortiment_TVHifi' }"></i>
+                            </li>
+            
+            <sub-menu v-if="data[activeId]" @mouseleave="isMobile ? false : throttleLeaveMenu" @update-hover="hover = $event" @cancel-parent-timer="cancelLeaveTimer" @hidemenulevel="clearActiveElementStateData($event)" @mouseover="clearTimeout(menuTimer);" :hover="hover" :categoryname="categoryName" :ismobile="isMobile" :category-url="categoryUrl" :menulevel="menulevel + 1" :nodes="data[activeId] || []" :activeid="activeId"></sub-menu>
+        </ul>
+    </nav>
+    <div v-cloak v-if="backDropIsActive" @click.self="handleBackdropClick" @touchend.self="handleBackdropClick" @touchmove.prevent class="menudrop"></div>
+</aside>
+        
+            <div class="hidden-xs hidden-sm mt-2">
+                <div class="mb-2"><div data-vueapp="campaigns" class="site-bottom-left" id="c81cecc2c6c754ff4bdfbc548018d6412" element-id="81cecc2c-6c75-4ff4-bdfb-c548018d6412" data="e30=">
+</div>
+</div><div data-vueapp="campaigns" class="site-bottom-left-2" id="c49271a34d03945e7814b28d0918bb617" element-id="49271a34-d039-45e7-814b-28d0918bb617" data="e30=">
+</div>
+
+            </div>
+    </div>
+    <main class="col-xs-12 col-md-9">
+            <div>
+                <div class="site-bar-breadcrumbs d-flex mb-2">
+                    <ol class="breadcrumb d-flex small" id="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a class="p-0" href="/" itemprop="item"><span itemprop="name">Forside</span></a><meta itemprop="position" content="1" /></li>
+
+
+<li itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a class="p-0" href="/Baerbar" itemprop="item"><span itemprop="name">Bærbar</span></a><meta itemprop="position" content="2" /></li></ol>
+                </div>
+            </div>
+        
+        
+
+    <div class="site-campaignElement" data-campaign-element-id="5ca78c68-c4ae-49b7-b27d-fa6b263b051b">
+        <style>.Baerbar::before{content:"";position:absolute;width:1%;height:auto;top:0;bottom:0;left:-1px;border-left:#f1f2f4 1px solid}.Baerbar{color:#252525;font-size:clamp(1rem,3vw,1.3rem);line-height:1.5;margin:0;position:relative}.Baerbar::after{content:"";position:absolute;width:1%;height:auto;top:0;bottom:0;right:-1px;border-right:#f1f2f4 1px solid}.Baerbar h1,.Baerbar h2,.Baerbar h3,.Baerbar h4{font-weight:700}.Baerbar h1{font-size:clamp(2.5rem,3vw,3.5rem);padding:0 0 10px 0;margin:0;line-height:1.1}.Baerbar h2{font-size:clamp(2rem,3vw,2.5rem);padding:30px 10% 0 10%;margin:0;line-height:1.5}.Baerbar h3{font-size:clamp(1.8rem,3vw,2rem);line-height:1.5}.Baerbar h4{font-size:clamp(1.5rem,3vw,1.8rem);line-height:1.5}.Baerbar a{font-size:clamp(1.1rem,3vw,1.3rem);line-height:1.5}.Baerbar img{height:auto}.Baerbar .Sec-A{width:100%;overflow:hidden;background-color:#fff}.Baerbar .A-Banner{width:100%}.Baerbar .A-Headline{text-align:center;color:#000;padding:0 30px}.Baerbar .A-Headline p{margin:0 0 10px 0;padding:0 30px}.Baerbar .A-Headline a button{margin-top:25px;background-color:#e30613;color:#fff;border:0;padding:8px 30px;border-radius:20px}.Baerbar .A-Headline a button:hover{background-color:#252525}.Baerbar .Sec-B::before{content:"";position:absolute;width:90%;height:1px;top:30px;left:5%;background-color:#f1f2f4}.Baerbar .Sec-B{width:100%;padding:40px 0 10px 0;position:relative}.Baerbar .B-Headline{width:100%;text-align:center;color:#000;padding:15px 0}.Baerbar .B-Headline h2{padding:10px 0 0 0}.Baerbar .B-Grid{width:100%;display:flex;flex-wrap:wrap;padding:10px 2.5%}.Baerbar .B-Grid a{width:25%;margin-top:10px;padding:0% 2.5%;font-weight:700;display:block}.Baerbar .B-Grid a:hover{text-decoration:none}.Baerbar .B-Grid .cirkel{border-radius:50%;padding:16% 16%;background-color:#f1f2f4;transition:.5s ease}.Baerbar .B-Grid a:hover .cirkel{background-color:#d9d9d9}.Baerbar .B-Grid .cirkel img{transition:.5s ease}.Baerbar .B-Grid .cirkel span{font-size:4rem;padding:30px 30px;color:#252525}.Baerbar .B-Grid figcaption{margin-top:10px;margin-bottom:30px;text-align:center;border-radius:50px;padding:5px}.Baerbar .Sec-D::before{content:"";position:absolute;width:90%;height:1px;top:0;left:5%;background-color:#f1f2f4}.Baerbar .Sec-D{width:100%;padding:40px 0 10px 0;position:relative;color:#252525}.Baerbar .D-Showit{display:block}.Baerbar .D-Hiddeit{display:none}.Baerbar .D-Grid{width:100%;background-color:#fff;padding:10px 30px}.Baerbar .D-TextBox{width:100%;color:#252525}.Baerbar .D-TextBox h3{margin:0 0 10px 0}.Baerbar .D-button{margin-top:15px;width:100%;display:flex;justify-content:center}.Baerbar .D-button a button{border:0;background-color:#fff}.Baerbar .D-button a button span{font-size:2.5rem}.Baerbar .E-Grid{width:100%;display:flex;flex-wrap:wrap;align-items:center;background-color:#fff;border-top:#f1f2f4 1px solid;position:relative}.Baerbar .E-TextBox-BL{width:65%;padding:10px 30px}.Baerbar .E-TextBox-BR{width:65%;padding:0 30px}.Baerbar .E-TextBox-BL::after,.Baerbar .E-TextBox-BR::after{content:"";position:absolute;width:1px;height:86%;top:7%;left:35%;background-color:#f1f2f4}.Baerbar .E-TextBox-BR::after{left:65%}.Baerbar .E-ImgBox{width:35%;padding:30px 30px}.Baerbar .E-TextBox-BL a,.E-TextBox-BR a{width:100%}.Baerbar .E-TextBox-BL a button,.E-TextBox-BR a button{margin:15px 0;background-color:#e30613;color:#fff;border:0;padding:6px 30px;border-radius:20px}.Baerbar .E-TextBox-BL a button:hover,.E-TextBox-BR a button:hover{background-color:#252525}.Baerbar .F-Grid{border-top:#f1f2f4 1px solid;width:100%;display:flex;flex-wrap:wrap;background-color:#fff;color:#252525;padding:30px;position:relative}.Baerbar .F-TextBox{width:100%;padding:10px 30px}.Baerbar .G-Grid{border-top:#f1f2f4 1px solid;width:100%;display:flex;flex-wrap:wrap;align-items:center;background-color:#fff;color:#252525;padding:15px 0 15px 30px;position:relative}.Baerbar .G-NumberBox{width:15%;display:flex;justify-content:center;padding:5%;border-right:#f1f2f4 1px solid}.Baerbar .G-NumberBox span{font-size:4rem}.Baerbar .G-TextBox{width:85%;padding:10px 30px}@media screen and (max-width:991px){.Baerbar .A-Headline{padding:0 15px}.Baerbar .A-Headline p{padding:0}.Baerbar .A-Headline a button{margin-top:15px}.Baerbar .B-Headline{padding:15px 0 5px 0}.Baerbar .B-Grid{padding:10px 2.5%}.Baerbar .B-Grid a{width:33%;margin-top:5px}.Baerbar .B-Grid figcaption{margin-top:10px;margin-bottom:10px;text-align:center;border-radius:50px;padding:5px}.Baerbar .C-wrapper{display:none}.Baerbar .E-TextBox-BL{width:100%;padding:10px 30px;border-left:#f1f2f4 1px solid}.Baerbar .E-TextBox-BR{width:100%;padding:0 30px;border-right:#f1f2f4 1px solid}.Baerbar .E-TextBox-BL::after,.Baerbar .E-TextBox-BR::after{display:none}.Baerbar .E-TextBox-BR::after{display:none}.Baerbar .E-ImgBox{width:100%;padding:30px 30px}.Baerbar .G-Grid{padding:0}.Baerbar .G-reverse{flex-wrap:wrap-reverse}.Baerbar .F-Grid{padding:0}}</style><div class="Baerbar"><div class="row"><div class="col-xs-12"><div class="Sec-A"><div class="A-Banner"><img width="852" height="350" src="/Images/Baerbar-Top-Red-852x350.jpg" alt="Bærbar top-banner"></div><div class="A-Headline"><h1>Bærbar til arbejde, studie og gaming</h1><p>Står du overfor at købe en ny studiecomputer, bærbar til arbejdet eller en kraftig gaming laptop? Så er du landet det helt rigtige sted! Hos Proshop finder du et stort udvalg af bærbare computere fra de største og mest populære brands på markedet såsom HP, Lenovo, ASUS, Samsung og Apple.</p><p><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="#MPanchor1">For at hjælpe dig godt på vej, har vi samlet en række råd, tips og tricks herunder.</a></p><p></p></div></div><div class="Sec-B"><div class="B-Headline"><h2>Populære kategorier</h2></div><div class="B-Grid"><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Skole-computer"><figure><div class="cirkel"><img width="350" height="350" class="lazy" src="" data-src="/Images/Baerbar-kategorier-computer-350x350.png" alt="Bærbar til studie"></div><figcaption>Bærbare til studie</figcaption></figure></a> <a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Baerbar-til-erhverv"><figure><div class="cirkel"><img width="350" height="350" class="lazy" src="" data-src="/Images/Baerbar-kategorier-erhverv-350x350.png" alt="Bærbar til erhverv"></div><figcaption>Bærbare til erhverv</figcaption></figure></a> <a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Gaming-baerbar"><figure><div class="cirkel"><img width="350" height="350" class="lazy" src="" data-src="/Images/Baerbar-kategorier-Gaming-350x350.png" alt="Gaming bærbar"></div><figcaption>Bærbare til Gaming</figcaption></figure></a> <a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Refurbished-baerbar?cid=c67e49c5-6031-426a-929a-946f968af44e"><figure><div class="cirkel"><img width="350" height="350" class="lazy" src="" data-src="/Images/Baerbar-kategorier-Refurbished-350x350.png" alt="Refurbished bærbar"></div><figcaption>Refurbished bærbare</figcaption></figure></a> <a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Microsoft-Surface"><figure><div class="cirkel"><img width="350" height="350" class="lazy" src="" data-src="/Images/Baerbar-kategorier-Microsoft-Surface350x350.png" alt="Microsoft Surface"></div><figcaption id="MPanchor1">Microsoft Surface</figcaption></figure></a> <a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/MacBook?c=baerbar#productList"><figure><div class="cirkel"><img width="350" height="350" class="lazy" src="" data-src="/Images/Baerbar-kategorier-macbook350x350.png" alt="MacBook"></div><figcaption>MacBooks</figcaption></figure></a> <a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Chromebook"><figure><div class="cirkel"><img width="350" height="350" class="lazy" src="" data-src="/Images/Baerbar-kategorier-Chromss350x350.png" alt="Chromebook"></div><figcaption>Chromebooks</figcaption></figure></a> <a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Baerbar#productList"><figure><div class="cirkel"><img width="350" height="350" class="lazy" src="" data-src="/Images/Baerbar-kategorier-all-350x350.png" alt="Alle bærbar"></div><figcaption>Alle bærbare</figcaption></figure></a></div></div><div class="Sec-D"><div class="D-Grid"><div class="D-TextBox"><h3>Hvilken bærbar skal man vælge?</h3><p>Mulighederne er mange, når du skal finde din nye bærbar. Så hvilken laptop, du skal vælge, afhænger helt og holdent af, hvad du skal bruge den til. Overordnet kan vores udvalg inddeles i 4 klasser af bærbare:</p><ol><li>Studie bærbar til skole eller hjemmebrug.<li>Bærbar til erhverv, som uden problemer trækker professionelle programmer.<li>Gaming laptop, som sikrer fuld fordybelse og kører dine spil uden at lagge.<li>Refurbished laptop, som er renoverede bærbare med samme gode garanti.</ol></div><div class="D-button"><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" id="Collapses" class="D-Showit" href="javascript:void(0);" onclick="Collapsefunction()"><button type="button" data-toggle="collapse" data-target="#demo"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" /></svg></button></a></div></div><div id="demo" class="collapse"><div class="E-Grid G-reverse"><div class="E-TextBox-BR"><h3>All-round bærbar til studie og hjemmebrug</h3><p>Kategorien af all-round bærbare rummer PC i mange forskellige designs, brands og prisniveauer. En god all-round studie pc eller hygge-bærbar behøver således ikke koste en formue. Men går du efter et bestemt design eller brand, kan det det selvfølgelig spille ind på prisen. Nogle af de mest populære laptops i all-round klassen inkluderer bl.a. Google Chromebooks og Apple MacBooks. Men også 2-i-1 bærbarene, der kan bruges både som tablet og laptop, er populære.</p><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/baerbar#productList"><button type="button">Se produkter</button></a></div><div class="E-ImgBox"><img width="915" height="900" class="lazy" src="" data-src="/Images/Baerbar-All-round.jpg" alt="All-round bærbar"></div></div><div class="E-Grid"><div class="E-ImgBox"><img width="915" height="900" class="lazy" src="" data-src="/Images/Baerbar-Chromebooks.jpg" alt="Google Chromebook"></div><div class="E-TextBox-BL"><h3>Google Chromebook</h3><p>Google Chromebooks er geniale til fx studie og findes i modeller fra mange af de største brands som fx Samsung, Acer, Lenovo og HP. Chromebooks er lette, kører med Google’s Chrome OS styresystem og gemmer dine data i skyen, så du altid har nem adgang til dine ting. Du skal blot logge på din Google-konto, så har du adgang til alle dine filer og indstillinger.</p><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Chromebook?cid=c67e49c5-6031-426a-929a-946f968af44e"><button type="button">Se produkter</button></a></div></div><div class="E-Grid G-reverse"><div class="E-TextBox-BR"><h3>Apple MacBook</h3><p>Apple’s Macbook modeller er især populære blandt dem, der går op i kombinationen af design og performance. Mac er kendt for at være nogle af de ypperste modeller på markedet, men placerer sig også i de højere prisniveauer for all-round klassen.</p><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/MacBook?c=baerbar#productList"><button type="button">Se produkter</button></a></div><div class="E-ImgBox"><img width="915" height="900" class="lazy" src="" data-src="/Images/Baerbar-Macbook.jpg" alt="Apple MacBook"></div></div><div class="E-Grid"><div class="E-ImgBox"><img width="915" height="900" class="lazy" src="" data-src="/Images/Baerbar-2i1.jpg" alt="Microsoft Surface"></div><div class="E-TextBox-BL"><h3>Microsoft Surface 2-i-1 laptops</h3><p>Vil du have optimal fleksibilitet, bør du kigge efter en af de populære 2-i-1 bærbare computere. Microsoft Surface kan foldes, flippes og vendes, som det passer dig. Få det bedste fra tablet- og bærbar-verdenen samlet i én maskine.</p><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Microsoft-Surface"><button type="button">Se produkter</button></a><br> <a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Windows-baerbar"><button type="button">Alle Microsoft PC'er</button></a>.</div></div><div class="E-Grid G-reverse"><div class="E-TextBox-BR"><h3>Professionel bærbar til erhverv</h3><p>De bærbare PC’er til erhverv er for professionelle, som arbejder i tunge programmer, der kræver ekstra ydeevne og RAM. De bærbare PC’er til erhvervsbrug er ofte født med Windows Pro, som sikrer høj performance og driftssikkerhed. Ligesom der findes udvalgte modeller med udvidet garanti. Bærbar maskinerne til erhverv er bygget med holdbarhed og power for øje. Det er derfor også muligt at finde maskiner bygget specifikt til fx hardcore tegneprogrammer som AutoCad, eller med skærm og grafikkort til detaljeret grafisk arbejde i højeste kvalitet.</p><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href=""><button type="button">Se produkter</button></a></div><div class="E-ImgBox"><img width="915" height="900" class="lazy" src="" data-src="/Images/Baerbar-erhverv.jpg" alt="Professionel bærbar til erhverv"></div></div><div class="E-Grid"><div class="E-ImgBox"><img width="915" height="900" class="lazy" src="" data-src="/Images/Baerbar-Gaming.jpg" alt="Gaming bærbar"></div><div class="E-TextBox-BL"><h3>Gaming bærbar</h3><p>Med en god gamer bærbar kan du tage dine spil med dig overalt. Bærbar gamer PC’erne har fuld fokus på vilde designs, skærmopløsning, køling og maksimal ydeevne, så du får en gaming-oplevelse i topklasse uanset, hvor du er. Lys og lyd er i højsædet, med programmérbar RGB-belysning og knivskarpe lydsystemer, som sørger for fuld immersion i dine spil. Og så der er rig mulighed for at optimere og personalisere din gaming laptop, så den afspejler DINE gaming-præferencer - fra hardware til design!</p><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/gaming-baerbar"><button type="button">Se produkter</button></a></div></div><div class="E-Grid G-reverse"><div class="E-TextBox-BR"><h3>Refurbished laptop - det bæredygtige alternativ</h3><p>En refurbished laptop er en brugt bærbar, som istandsættes, opdateres og gennemtestes, før den sælges igen. Når du vælger en genbrugt bærbar, er du med til at reducere ressourceforbrug og miljøpåvirkning - og du sænker samtidig mængden af elektronikaffald. Dette valg er godt for både miljø og din pengepung.</p><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Refurbished-baerbar?cid=c67e49c5-6031-426a-929a-946f968af44e"><button type="button">Se produkter</button></a></div><div class="E-ImgBox"><img width="915" height="900" class="lazy" src="" data-src="/Images/Baerbar-Refurbished.jpg" alt="Refurbished laptop"></div></div><div class="F-Grid"><div class="F-TextBox"><h3>5 gode råd, når du køber ny bærbar</h3><p>Hvis du har begrænset kendskab til hardware, kan det nemt virke uoverskueligt at købe ny computer. Derfor har vi samlet 5 gode råd til, hvilke specifikationer du skal have fokus på, når du vælger din nye bærbare computer:</p></div></div><div class="G-Grid"><div class="G-NumberBox"><span>1</span></div><div class="G-TextBox"><h4>Processor / CPU (Central Processing Unit)</h4><p>Processoren er din computers hjerne og jo hurtigere den er, jo hurtigere fungerer din computer også. Det kan være vanskeligt at gennemskue forskellen fra den ene processor til den anden. Derfor er det en god ide at sammenligne, før du beslutter dig.</p><p><strong>TIP: Vælg processor efter, hvad du skal bruge din bærbar til. Tjek benchmarktests for de CPU’er, du vil sammenligne og vurdér derudfra, hvad du har brug for.</strong></p></div></div><div class="G-Grid"><div class="G-NumberBox"><span>2</span></div><div class="G-TextBox"><h4>RAM (Random Access Memory)</h4><p>Computerens RAM har til formål at huske og håndtere informationer til processoren. Jo flere RAM, desto flere programmer og processer kan din computer køre på samme tid.</p><p><strong>TIP: Skal du bruge din computer til fx gaming eller billede/videoredigering, anbefaler vi, at du kigger efter en bærbar med minimum 16GB RAM.</strong></p></div></div><div class="G-Grid"><div class="G-NumberBox"><span>3</span></div><div class="G-TextBox"><h4>Harddisk</h4><p>Når du kigger efter en ny bærbar, skal du huske at overveje hvor meget lagringsplads, du har behov for. De fleste bærbare i dag kommer med 256GB, 512GB eller 1TB, hvor en pc med 256GB ofte vil være nok, hvis du ikke gemmer synderligt meget lokalt på din pc. Vi anbefaler 1TB, hvis du skal bruge din bærbare computer til gaming. Når man taler lagerenheder, er der typisk to slags, en HDD eller en SSD. En HDD er en mekanisk harddisk og står for ”Hard Disk Drive”, mens en SSD som står for ”Solid State Drive” er markant hurtigere og i langt de fleste tilfælde er den standard i nye bærbare.</p><p><strong>TIP: Til studiebrug anbefaler vi 512GB, mens vi til gaming anbefaler 1TB.</strong></p></div></div><div class="G-Grid"><div class="G-NumberBox"><span>4</span></div><div class="G-TextBox"><h4>Grafikkort / GPU (Graphics Processing Unit)</h4><p>Grafikkortet i en computer sørger for billedet på din skærm. Der findes to typer grafikkort, integrerede og dedikerede. Et integreret grafikkort er indbygget i processoren. Processorer kaldes også for ”APU”, hvilket står for ”Accelerated Processing Unit”. Disse er integreret i processoren og deler både RAM og køling med processoren. Et dedikeret grafikkort er et indbygget grafikkort i den bærbare, som udelukkende skal rendere billedet på din skærm. Ofte har et dedikeret grafikkort sin egen køling og egne RAM, også kaldet VRAM. Fordelen ved et integreret grafikkort er et lavere strømforbrug, og derved holder den bærbare bedre strøm, mens fordelen ved et dedikeret grafikkort er en klart overlegen ydelse i blandt andet spil og grafik-intensive renderingsopgaver.</p><p><strong>TTIP: Skal du bruge din bærbare computer til gaming, er det et krav med et dedikeret grafikkort, for at opnå den bedste oplevelse.</strong></p></div></div><div class="G-Grid"><div class="G-NumberBox"><span>5</span></div><div class="G-TextBox"><h4>Skærm – størrelse, opløsning og type</h4><p>Når det kommer til skærmen på din bærbare computer, skal du have to ting for øje: Skærmstørrelse (“, tommer) og skærmtype. Skærm- og PC-størrelse hænger sammen: Jo større skærm, jo større laptop. En god tommelfingerregel mht. skærmopløsning er, at alt over 14”, bør have 1080p (full HD) opløsning. Opdateringshastighed (Hz) angivere skærmens reaktionstid. Jo højere hertz, jo bedre er responstiden. Standard for bærbare er omkring 60 Hz, men vi anbefaler, at du vælger 144 Hz eller 165 Hz til gaming. Overvej også, om du foretrækker en mat eller blank skærm, da det har stor betydning for din skærmoplevelse, når du har din bærbar med på farten.</p><p><strong>TIP: Hvis du vælger en skærm, som er større end 14”, bør den have en opløsning på 1080p (full HD).</strong></p></div></div><div class="F-Grid"><div class="F-TextBox"><h3>Stadig i tvivl? Spørg vores kundeservice til råds</h3><p>Er du i tvivl, om hvilken bærbar du skal købe, er du velkommen til at spørge vores <a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="/Kundeservice.htm">kunderådgivere</a> til råds. Vi sidder klar med masser af viden om alt fra specs til brands og designs, så du får den bedste laptop til netop dine behov.</p><div class="D-button"><a data-action="landingPageClick" data-id="c67e49c5-6031-426a-929a-946f968af44e" data-name=" DK - Bærbar Landingpage" data-creative="5ca78c68-c4ae-49b7-b27d-fa6b263b051b" data-position="category-top" href="javascript:void(0);" onclick="Collapsefunction()"><button type="button" data-toggle="collapse" data-target="#demo"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" /></svg></button></a></div></div></div></div></div></div></div></div><script>function Collapsefunction(){var n=document.getElementById("Collapses");n.className==="D-Showit"?n.className+=" D-Hiddeit":n.className="D-Showit"}</script>
+    </div>
+
+    <div class="site-campaignElement" data-campaign-element-id="9cca3a32-1c6b-4eb7-a2da-87a69a706c2e">
+        <a data-action="campaignClick" data-id="e7a0cf75-340e-43b6-83c2-a296d3d1e236" data-name="Intel Spring Bundle 25Q2-05" data-creative="9cca3a32-1c6b-4eb7-a2da-87a69a706c2e" data-position="category-top-2" href="/Intel-Spring-Game-Bundle" target="_self"><img src="/Images/Intel-Spring-Bundle-852x350-DK_f0fd4ae65260.jpg" alt /></a>
+    </div>
+
+
+
+
+
+
+
+        <span data-type="category" data-siteid="proshop.dk" data-categoryid="baerbare"></span>
+    <div id="productList" class="w-100 new-design">
+        <div class="site-filter-sorting clearfix pt-2">
+            <facet-collections :facet-collections="facetCollections">
+                <template v-slot:show-more-text>
+                    Vis flere
+                </template>
+                <template v-slot:show-less-text>
+                    Vis færre
+                </template>
+                <template v-slot:reset-text>
+                    Nulstil alle filtre
+                </template>
+            </facet-collections>
+        </div>
+
+<ul class="site-panel list-unstyled site-productlist-container pt-1" role="list" id="products" data-gtm="eyJldmVudCI6InZpZXdfaXRlbV9saXN0IiwiZWNvbW1lcmNlIjp7Iml0ZW1zIjpbeyJpdGVtX2lkIjoiMzM1NzI1MyIsIml0ZW1fbmFtZSI6Ikxlbm92byBSZWZ1cmJpc2hlZCBUaGlua1BhZCBUMTQgRzEgLSAxNFwiIHwgQ29yZSBpNSB8IDE2R0IgfCAyNTZHQiB8IFQxQSBHcmFkZSIsIml0ZW1fYnJhbmQiOiJMZW5vdm8gUmVmdXJiaXNoZWQiLCJpdGVtX2NhdGVnb3J5IjoiQuZyYmFyIiwicHJpY2UiOjI5OTkuMDAwMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMjkxNjA1IiwiaXRlbV9uYW1lIjoiTGVub3ZvIFYxNSBHZW4gNCAtIDE1LjZcIiB8IFJ5emVuIDcgfCAxNkdCIHwgNTEyR0IiLCJpdGVtX2JyYW5kIjoiTGVub3ZvIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjozOTg3LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzMyNzI3MyIsIml0ZW1fbmFtZSI6Ik1TSSBWZWN0b3IgMTYgSFggQUkgLSAxNlwiIHwgUlRYIDUwNzAgVGkgfCBDb3JlIFVsdHJhIDcgfCAxNkdCIHwgMVRCIiwiaXRlbV9icmFuZCI6Ik1TSSIsIml0ZW1fY2F0ZWdvcnkiOiJC5nJiYXIiLCJwcmljZSI6MTU3OTkuMDAwMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMzI0MzkxIiwiaXRlbV9uYW1lIjoiTVNJIFRpdGFuIDE4IEhYIEFJIC0gMThcIiB8IFJUWCA1MDgwIHwgQ29yZSBVbHRyYSA5IHwgNjRHQiB8IDZUQiIsIml0ZW1fYnJhbmQiOiJNU0kiLCJpdGVtX2NhdGVnb3J5IjoiQuZyYmFyIiwicHJpY2UiOjM4OTk5LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzMxMTAyOSIsIml0ZW1fbmFtZSI6Ik1TSSBQdWxzZSAxNiBBSSAtIDE2XCIgfCBSVFggNDA2MCB8IENvcmUgVWx0cmEgNyB8IDE2R0IgfCAxVEIiLCJpdGVtX2JyYW5kIjoiTVNJIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjoxMTk5OS4wMDAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMzMTEwMzMiLCJpdGVtX25hbWUiOiJNU0kgTW9kZXJuIDE0IC0gMTRcIiB8IFJ5emVuIDUgfCAxNkdCIHwgNTEyR0IiLCJpdGVtX2JyYW5kIjoiTVNJIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjo0OTk5LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzI2NTEyNSIsIml0ZW1fbmFtZSI6Ikxlbm92byBMb1EgLSAxNS42XCIgfCBSVFggNDA3MCB8IEFNRCBSeXplblQgNyA3NDM1SFMgfCAyNEdCIHwgMVRCIiwiaXRlbV9icmFuZCI6Ikxlbm92byIsIml0ZW1fY2F0ZWdvcnkiOiJC5nJiYXIiLCJwcmljZSI6ODU5OS4wMDAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMyOTczMTYiLCJpdGVtX25hbWUiOiJMZW5vdm8gVjE0IEdlbiA0IC0gMTRcIiB8IFJ5emVuIDcgfCAxNkdCIHwgNTEyR0IiLCJpdGVtX2JyYW5kIjoiTGVub3ZvIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjozNzkzLjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzI3MDk3NiIsIml0ZW1fbmFtZSI6Ikxlbm92byBUaGlua3BhZCBFMTYgR2VuIDIgLSAxNlwiIHwgUnl6ZW4gNSB8IDE2R0IgfCA1MTJHQiIsIml0ZW1fYnJhbmQiOiJMZW5vdm8iLCJpdGVtX2NhdGVnb3J5IjoiQuZyYmFyIiwicHJpY2UiOjY1OTkuMDAwMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMzUxMzc2IiwiaXRlbV9uYW1lIjoiQXBwbGUgTWFjQm9vayBBaXIgLSAxMy42XCIgfCBNNCB8IDE2R0IgfCAyNTZHQiB8IE1pZG5pZ2h0IiwiaXRlbV9icmFuZCI6IkFwcGxlIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjo4OTM3LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzMzNjIyNyIsIml0ZW1fbmFtZSI6Ikxlbm92byBSZWZ1cmJpc2hlZCBYMSBZb2dhIEczIC0gMTRcIiBUb3VjaCB8IENvcmUgaTcgfCAxNkdCIHwgNTEyR0IgfCBCQVJHQTFOIEdyYWRlIiwiaXRlbV9icmFuZCI6Ikxlbm92byBSZWZ1cmJpc2hlZCIsIml0ZW1fY2F0ZWdvcnkiOiJC5nJiYXIiLCJwcmljZSI6MjE5OS4wMDAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMzMTM2OTIiLCJpdGVtX25hbWUiOiJBU1VTIFZpdm9ib29rIEdvIDE0IC0gMTRcIiB8IE4xMDAgfCA0R0IgfCAxMjhHQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjoxMzk5LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzMyODY0MSIsIml0ZW1fbmFtZSI6IkFTVVMgWmVuYm9vayBEdW8gLSAxNFwiIFRvdWNoIHwgQ29yZSBVbHRyYSA5IHwgMzJHQiB8IDJUQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjoxNjc5OS4wMDAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjI5Nzg0MzUiLCJpdGVtX25hbWUiOiJTYW1zdW5nIEdhbGF4eSBDaHJvbWVib29rIEdvICAtIENlbGVyb24gJiAxNFwiIEhEIiwiaXRlbV9icmFuZCI6IlNhbXN1bmciLCJpdGVtX2NhdGVnb3J5IjoiQuZyYmFyIiwicHJpY2UiOjI2OTkuMDAwMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMzUxMzcyIiwiaXRlbV9uYW1lIjoiQXBwbGUgTWFjQm9vayBBaXIgLSAxMy42XCIgfCBNNCB8IDE2R0IgfCAyNTZHQiB8IFNpbHZlciIsIml0ZW1fYnJhbmQiOiJBcHBsZSIsIml0ZW1fY2F0ZWdvcnkiOiJC5nJiYXIiLCJwcmljZSI6ODkyNi4wMDAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMzNTEzODMiLCJpdGVtX25hbWUiOiJBcHBsZSBNYWNCb29rIEFpciAtIDE1LjNcIiB8IE00IHwgMTZHQiB8IDI1NkdCIHwgTWlkbmlnaHQiLCJpdGVtX2JyYW5kIjoiQXBwbGUiLCJpdGVtX2NhdGVnb3J5IjoiQuZyYmFyIiwicHJpY2UiOjEwNzQ1LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzMxMTAzMiIsIml0ZW1fbmFtZSI6Ik1TSSBDeWJvcmcgMTUgLSAxNS42XCIgfCBSVFggMzA1MCB8IENvcmUgaTUgfCAxNkdCIHwgNTEyR0IiLCJpdGVtX2JyYW5kIjoiTVNJIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjo3OTk5LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzM1NTE1MiIsIml0ZW1fbmFtZSI6IkhQIDE0LWVtMDA0MW5vIC0gMTRcIiB8IFJ5emVuIDcgfCAxNkdCIHwgNTEyR0IiLCJpdGVtX2JyYW5kIjoiSFAiLCJpdGVtX2NhdGVnb3J5IjoiQuZyYmFyIiwicHJpY2UiOjM2NDkuMDAwMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMzM4MjEzIiwiaXRlbV9uYW1lIjoiQVNVUyBWaXZvYm9vayAxNlggLSAxNlwiIHwgUlRYIDQwNTAgfCBDb3JlIGk3IHwgMTZHQiB8IDUxMkdCIiwiaXRlbV9icmFuZCI6IkFTVVMiLCJpdGVtX2NhdGVnb3J5IjoiQuZyYmFyIiwicHJpY2UiOjk5OTkuMDAwMDAsInF1YW50aXR5IjoxfSx7Iml0ZW1faWQiOiIzMjQ1MDAwIiwiaXRlbV9uYW1lIjoiTGVub3ZvIExvUSAtIDE1LjZcIiB8IFJUWCA0MDYwIHwgQ29yZSBpNSB8IDI0R0IgfCAxVEIiLCJpdGVtX2JyYW5kIjoiTGVub3ZvIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjo4NDk5LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzI2NTEyNCIsIml0ZW1fbmFtZSI6Ikxlbm92byBMb1EgLSAxNS42XCIgfCBSVFggNDA2MCB8IEFNRCBSeXplblQgNyA3NDM1SFMgfCAyNEdCIHwgMVRCIiwiaXRlbV9icmFuZCI6Ikxlbm92byIsIml0ZW1fY2F0ZWdvcnkiOiJC5nJiYXIiLCJwcmljZSI6NzQ5OS4wMDAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMyOTg3NzEiLCJpdGVtX25hbWUiOiJBU1VTIFZpdm9Cb29rIDE1WCBPTEVEIC0gMTUuNlwiIHwgUnl6ZW4gNyB8IDE2R0IgfCA1MTJHQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjo3NDk5LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzM1NDg0OCIsIml0ZW1fbmFtZSI6IkFTVVMgVml2b2Jvb2sgMTZYIC0gMTZcIiB8IFJUWCA0MDUwIHwgQ29yZSBpNSB8IDE2R0IgfCA1MTJHQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjo1OTk5LjAwMDAwLCJxdWFudGl0eSI6MX0seyJpdGVtX2lkIjoiMzMxMTAzMCIsIml0ZW1fbmFtZSI6Ik1TSSBDeWJvcmcgMTQgLSAxNFwiIHwgUlRYIDQwNTAgfCBDb3JlIGk3IHwgMTZHQiB8IDUxMkdCIiwiaXRlbV9icmFuZCI6Ik1TSSIsIml0ZW1fY2F0ZWdvcnkiOiJC5nJiYXIiLCJwcmljZSI6NTg5OS4wMDAwMCwicXVhbnRpdHkiOjF9LHsiaXRlbV9pZCI6IjMzMjQ2NzQiLCJpdGVtX25hbWUiOiJBU1VTIFRVRiBHYW1pbmcgRjE1IC0gMTUuNlwiIHwgUlRYIDQwNzAgfCBDb3JlIGk3IHwgMTZHQiB8IDFUQiIsIml0ZW1fYnJhbmQiOiJBU1VTIiwiaXRlbV9jYXRlZ29yeSI6IkLmcmJhciIsInByaWNlIjo4OTk5LjAwMDAwLCJxdWFudGl0eSI6MX1dfSwic3VidG90YWxBbW91bnQiOjAuMH0=">
+    <li class="site-active-results-container mb-1 mt-0">Produkter i din s&#248;gning:  978</li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/Lenovo-Refurbished-ThinkPad-T14-G1-14-Core-i5-16GB-256GB-T1A-Grade/3357253" title="Lenovo Refurbished ThinkPad T14 G1 - 14&quot; | Core i5 | 16GB | 256GB | T1A Grade - L-T14G1-SCA-T007"><img alt="Bærbar - Lenovo Refurbished ThinkPad T14 G1 - 14&quot; | Core i5 | 16GB | 256GB | T1A Grade - L-T14G1-SCA-T007" height="116" src="/Images/174x116/3357253_111f76c19655.jpg" width="174" /></a>
+                    <div data-energy data-cpn="" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-nostyle site-image-badge-default">HOT</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/Lenovo-Refurbished-ThinkPad-T14-G1-14-Core-i5-16GB-256GB-T1A-Grade/3357253">
+                    <h2 product-display-name class="truncate-overflow">Lenovo Refurbished ThinkPad T14 G1 - 14&quot; | Core i5 | 16GB | 256GB | T1A Grade</h2>
+                    Intel Core i5-10310U, 16GB RAM, 256GB SSD, Windows 10 Pro (<i>Windows 11 Ready</i>), 14" (IPS 1920x1080 (Full HD)), WiFi 6 (802.11a/b/g/n/ac/ax) + Bluetooth, Service & Support: 2 års producent garanti<br />Tastaturlayout: <strong>Nordisk</strong><br /><details><summary>Kosmetisk stand: <strong>T1A</strong> <u style="color:#00f">Klik her</u> for at læse mere</summary><ul>✔ Når du vælger at købe istandsat elektronik, bidrager du til at reducere behovet for udvinding af nye råmaterialer, og mindsker samtidig mængden af elektronikaffald.<br />✔ Selvom varen er istandsat, får du et fuldt funktionsdygtigt produkt og 2 års garanti.<br />✔ Produktet er professionelt testet, dataslettet og rengjort i Danmark.</ul>Hvad kan du forvente af denne graduering?<br /><ul><li>Produktet vil vise mindre brugstegn, såsom små ridser og mærker på enheden og skærmen. <i>(Mærker på skærmen vil ikke være synlige, når den er tændt.)</i></li><li>70% af oprindelig mAh batterikapacitet.</li></ul></details>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">2.999,00 kr.</span>
+                            <span class="hidden-xs">(2.399,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3357253" />
+                            <input name="token" type="hidden" value="4e240a6f04a1" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3357253">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3357253</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/Lenovo-V15-Gen-4-156-Ryzen-7-16GB-512GB/3291605" title="Lenovo V15 Gen 4 - 15.6&quot; | Ryzen 7 | 16GB | 512GB - 82YY0011MX"><img alt="Bærbar - Lenovo V15 Gen 4 - 15.6&quot; | Ryzen 7 | 16GB | 512GB - 82YY0011MX" height="116" src="/Images/174x116/3291605_3502625d5edd.jpg" width="174" /></a>
+                    <div data-energy data-cpn="S29642599" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-nostyle site-image-badge-default">HOT</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/Lenovo-V15-Gen-4-156-Ryzen-7-16GB-512GB/3291605">
+                    <h2 product-display-name class="truncate-overflow">Lenovo V15 Gen 4 - 15.6&quot; | Ryzen 7 | 16GB | 512GB</h2>
+                    <p>AMD Ryzen 7 7730U, 16GB RAM, 512GB SSD, Windows 11 HOME, 15.6" (TN 1920x1080 (Full HD)), Wifi 6 (802.11a/b/g/n/ac/ax) + BT5.2, Service & Support: 1 års Lenovo Courier/Carry-in<br />Tastaturlayout: <strong>Nordisk</strong><br /><br /><strong>Anbefalede serviceopgraderinger:</strong></p><a style="text-decoration:none;color:inherit" href="/2653942"><table style="border-collapse:collapse;width:100%;margin-top:5px;border-top:1px solid #000;border-bottom:1px solid #000;height:30px"><tbody><tr style="height:30px"><td style="width:16.7596%;vertical-align:left;height:0"><img style="border-radius:0;float:middle" src="https://www.proshop.dk/Images/1600x1200/3066068_26392ae2bd08.jpg" alt="3 years - Lenovo Courier/Carry in Upgrade" width="90" height="51" /></td><td style="width:83.2404%;text-align:right;height:0"><h3 style="text-align:left"><strong><span style="color:#be0000">3 years - Lenovo Courier/Carry in Upgrade</span></strong></h3></td></tr></tbody></table></a><a style="text-decoration:none;color:inherit" href="/2654304"><table style="border-collapse:collapse;width:100%;margin-top:5px;border-top:1px solid #000;border-bottom:1px solid #000;height:30px"><tbody><tr style="height:30px"><td style="width:16.7596%;vertical-align:left;height:0"><img style="border-radius:0;float:middle" src="https://www.proshop.dk/Images/1600x1200/3066068_26392ae2bd08.jpg" alt="3 years - Lenovo Onsite Upgrade" width="90" height="51" /></td><td style="width:83.2404%;text-align:right;height:0"><h3 style="text-align:left"><strong><span style="color:#be0000">3 years - Lenovo Onsite Upgrade</span></strong></h3></td></tr></tbody></table></a><a style="text-decoration:none;color:inherit" href="/2835986"><table style="border-collapse:collapse;width:100%;margin-top:5px;border-top:1px solid #000;border-bottom:1px solid #000;height:30px"><tbody><tr style="height:30px"><td style="width:16.7596%;vertical-align:left;height:0"><img style="border-radius:0;float:middle" src="https://www.proshop.dk/Images/1600x1200/3066068_26392ae2bd08.jpg" alt="3 years - Premium Care with Onsite Upgrade" width="90" height="51" /></td><td style="width:83.2404%;text-align:right;height:0"><h3 style="text-align:left"><strong><span style="color:#be0000">3 years - Premium Care with Onsite Upgrade</span></strong></h3></td></tr></tbody></table></a>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">3.987,00 kr.</span>
+                            <span class="hidden-xs">(3.189,60 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3291605" />
+                            <input name="token" type="hidden" value="8247ad1be44e" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3291605">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3291605</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/MSI-Vector-16-HX-AI-16-RTX-5070-Ti-Core-Ultra-7-16GB-1TB/3327273" title="MSI Vector 16 HX AI - 16&quot; | RTX 5070 Ti | Core Ultra 7 | 16GB | 1TB - Vector 16 HX AI A2XWHG-002NEU"><img alt="Bærbar - MSI Vector 16 HX AI - 16&quot; | RTX 5070 Ti | Core Ultra 7 | 16GB | 1TB - Vector 16 HX AI A2XWHG-002NEU" height="116" src="/Images/174x116/3327273_2d9dab84002e.png" width="174" /></a>
+                    <div data-energy data-cpn="S30196275" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-nostyle site-image-badge-default">INKL. DYING LIGHT: THE BEAST  OG SID MEIER&#39;S CIVILIZATION&#174; VII</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/MSI-Vector-16-HX-AI-16-RTX-5070-Ti-Core-Ultra-7-16GB-1TB/3327273">
+                    <h2 product-display-name class="truncate-overflow">MSI Vector 16 HX AI - 16&quot; | RTX 5070 Ti | Core Ultra 7 | 16GB | 1TB</h2>
+                    <strong>GeForce RTX 5070 Ti</strong> 12GB, Intel Core Ultra 7 255HX, 16GB RAM, 1TB SSD, Windows 11 HOME, 16" (IPS 2560x1600 (WQXGA) 240Hz), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.3<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg  has-presales-price">15.799,00 kr.</span>
+                            <span class="hidden-xs">(12.639,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3327273" />
+                            <input name="token" type="hidden" value="8e16fa963687" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3327273">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3327273</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-10%</span></div></div>                <a class="show" href="/Baerbar/MSI-Titan-18-HX-AI-18-RTX-5080-Core-Ultra-9-64GB-6TB/3324391" title="MSI Titan 18 HX AI - 18&quot; | RTX 5080 | Core Ultra 9 | 64GB | 6TB - Titan 18 HX AI A2XWIG-002NEU"><img alt="Bærbar - MSI Titan 18 HX AI - 18&quot; | RTX 5080 | Core Ultra 9 | 64GB | 6TB - Titan 18 HX AI A2XWIG-002NEU" height="116" src="/Images/174x116/3324391_179ad22524c0.png" width="174" /></a>
+                    <div data-energy data-cpn="S30196271" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-nostyle site-image-badge-default">INKL. DYING LIGHT: THE BEAST  OG SID MEIER&#39;S CIVILIZATION&#174; VII</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/MSI-Titan-18-HX-AI-18-RTX-5080-Core-Ultra-9-64GB-6TB/3324391">
+                    <h2 product-display-name class="truncate-overflow">MSI Titan 18 HX AI - 18&quot; | RTX 5080 | Core Ultra 9 | 64GB | 6TB</h2>
+                    <strong>GeForce RTX 5080</strong> 16GB, Intel Core Ultra 9 285HX, 64GB RAM, 6TB SSD, Windows 11 HOME, 18" (<strong>MiniLED</strong> 3840x2400 (WQUXGA) 120Hz), Wifi 7 (802.11a/b/g/n/ac/ax/be) + BT5.4<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">43.599,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">38.999,00 kr.</span>
+                            <span class="hidden-xs">(31.199,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3324391" />
+                            <input name="token" type="hidden" value="e00f64df30e8" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3324391">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3324391</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-13%</span></div></div>                <a class="show" href="/Baerbar/MSI-Pulse-16-AI-16-RTX-4060-Core-Ultra-7-16GB-1TB/3311029" title="MSI Pulse 16 AI - 16&quot; | RTX 4060 | Core Ultra 7 | 16GB | 1TB - Pulse 16 AI C1VFKG-026NEU"><img alt="Bærbar - MSI Pulse 16 AI - 16&quot; | RTX 4060 | Core Ultra 7 | 16GB | 1TB - Pulse 16 AI C1VFKG-026NEU" height="116" src="/Images/174x116/3311029_e94275f89fbd.jpg" width="174" /></a>
+                    <div data-energy data-cpn="S29432213" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-nostyle site-image-badge-default">KUN 1 TILBAGE P&#197; LAGER</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/MSI-Pulse-16-AI-16-RTX-4060-Core-Ultra-7-16GB-1TB/3311029">
+                    <h2 product-display-name class="truncate-overflow">MSI Pulse 16 AI - 16&quot; | RTX 4060 | Core Ultra 7 | 16GB | 1TB</h2>
+                    <strong>GeForce RTX 4060</strong> 8GB, Intel Core Ultra 7 155U, 16GB RAM, 1TB SSD, Windows 11 HOME, 16" (IPS 2560x1600 (WQXGA) 240Hz), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.0<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">13.799,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">11.999,00 kr.</span>
+                            <span class="hidden-xs">(9.599,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3311029" />
+                            <input name="token" type="hidden" value="bbf612fd249e" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3311029">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3311029</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-18%</span></div></div>                <a class="show" href="/Baerbar/MSI-Modern-14-14-Ryzen-5-16GB-512GB/3311033" title="MSI Modern 14 - 14&quot; | Ryzen 5 | 16GB | 512GB - Modern 14 C7M-096NEU"><img alt="Bærbar - MSI Modern 14 - 14&quot; | Ryzen 5 | 16GB | 512GB - Modern 14 C7M-096NEU" class="lazy" data-src="/Images/174x116/3311033_49f0bca3680b.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29798447" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-nostyle site-image-badge-default">KUN 1 TILBAGE P&#197; LAGER</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/MSI-Modern-14-14-Ryzen-5-16GB-512GB/3311033">
+                    <h2 product-display-name class="truncate-overflow">MSI Modern 14 - 14&quot; | Ryzen 5 | 16GB | 512GB</h2>
+                    AMD Ryzen 5 7430U, 16GB RAM, 512GB SSD, Windows 11 HOME, 14" (IPS 1920x1080 (Full HD) 60Hz), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.0<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">6.099,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">4.999,00 kr.</span>
+                            <span class="hidden-xs">(3.999,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3311033" />
+                            <input name="token" type="hidden" value="2c8d065e5cc2" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3311033">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3311033</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-14%</span></div></div>                <a class="show" href="/Baerbar/Lenovo-LoQ-156-RTX-4070-AMD-Ryzen-7-7435HS-24GB-1TB/3265125" title="Lenovo LoQ - 15.6&quot; | RTX 4070 | AMD Ryzen™ 7 7435HS | 24GB | 1TB - 83JC0074MX"><img alt="Bærbar - Lenovo LoQ - 15.6&quot; | RTX 4070 | AMD Ryzen™ 7 7435HS | 24GB | 1TB - 83JC0074MX" class="lazy" data-src="/Images/174x116/3265125_d00b1b375815.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29737055" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-default" style="color: #FEFCFF; background-color: #FC352D">SUPER DAYS</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/Lenovo-LoQ-156-RTX-4070-AMD-Ryzen-7-7435HS-24GB-1TB/3265125">
+                    <h2 product-display-name class="truncate-overflow">Lenovo LoQ - 15.6&quot; | RTX 4070 | AMD Ryzen™ 7 7435HS | 24GB | 1TB</h2>
+                    <strong>GeForce RTX 4070</strong> 8GB, AMD Ryzen™ 7 7435HS, 24GB RAM, 1TB SSD, Windows 11 HOME, 15,6" (IPS 1920x1080 (Full HD)), Wifi 6 (802.11a/b/g/n/ac/ax) + BT5.2<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">9.999,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">8.599,00 kr.</span>
+                            <span class="hidden-xs">(6.879,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3265125" />
+                            <input name="token" type="hidden" value="86f3914809cc" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3265125">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3265125</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/Lenovo-V14-Gen-4-14-Ryzen-7-16GB-512GB/3297316" title="Lenovo V14 Gen 4 - 14&quot; | Ryzen 7 | 16GB | 512GB - 82YX0018MX"><img alt="Bærbar - Lenovo V14 Gen 4 - 14&quot; | Ryzen 7 | 16GB | 512GB - 82YX0018MX" class="lazy" data-src="/Images/174x116/3297316_082ca5a66ca9.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29642595" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Baerbar/Lenovo-V14-Gen-4-14-Ryzen-7-16GB-512GB/3297316">
+                    <h2 product-display-name class="truncate-overflow">Lenovo V14 Gen 4 - 14&quot; | Ryzen 7 | 16GB | 512GB</h2>
+                    <p>AMD Ryzen 7 7730U, 16GB RAM, 512GB SSD, Windows 11 HOME, 14" (TN 1920x1080 (Full HD)), Wifi 6 (802.11a/b/g/n/ac/ax) + BT5.2, Service & Support: 1 års Lenovo Courier/Carry-in<br />Tastaturlayout: <strong>Nordisk</strong><br /><br /><strong>Anbefalede serviceopgraderinger:</strong></p><a style="text-decoration:none;color:inherit" href="/2653942"><table style="border-collapse:collapse;width:100%;margin-top:5px;border-top:1px solid #000;border-bottom:1px solid #000;height:30px"><tbody><tr style="height:30px"><td style="width:16.7596%;vertical-align:left;height:0"><img style="border-radius:0;float:middle" src="https://www.proshop.dk/Images/1600x1200/3066068_26392ae2bd08.jpg" alt="3 years - Lenovo Courier/Carry in Upgrade" width="90" height="51" /></td><td style="width:83.2404%;text-align:right;height:0"><h3 style="text-align:left"><strong><span style="color:#be0000">3 years - Lenovo Courier/Carry in Upgrade</span></strong></h3></td></tr></tbody></table></a><a style="text-decoration:none;color:inherit" href="/2654304"><table style="border-collapse:collapse;width:100%;margin-top:5px;border-top:1px solid #000;border-bottom:1px solid #000;height:30px"><tbody><tr style="height:30px"><td style="width:16.7596%;vertical-align:left;height:0"><img style="border-radius:0;float:middle" src="https://www.proshop.dk/Images/1600x1200/3066068_26392ae2bd08.jpg" alt="3 years - Lenovo Onsite Upgrade" width="90" height="51" /></td><td style="width:83.2404%;text-align:right;height:0"><h3 style="text-align:left"><strong><span style="color:#be0000">3 years - Lenovo Onsite Upgrade</span></strong></h3></td></tr></tbody></table></a><a style="text-decoration:none;color:inherit" href="/2835986"><table style="border-collapse:collapse;width:100%;margin-top:5px;border-top:1px solid #000;border-bottom:1px solid #000;height:30px"><tbody><tr style="height:30px"><td style="width:16.7596%;vertical-align:left;height:0"><img style="border-radius:0;float:middle" src="https://www.proshop.dk/Images/1600x1200/3066068_26392ae2bd08.jpg" alt="3 years - Premium Care with Onsite Upgrade" width="90" height="51" /></td><td style="width:83.2404%;text-align:right;height:0"><h3 style="text-align:left"><strong><span style="color:#be0000">3 years - Premium Care with Onsite Upgrade</span></strong></h3></td></tr></tbody></table></a>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">3.793,00 kr.</span>
+                            <span class="hidden-xs">(3.034,40 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3297316" />
+                            <input name="token" type="hidden" value="bd18cdbb757e" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3297316">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3297316</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/Lenovo-Thinkpad-E16-Gen-2-16-Ryzen-5-16GB-512GB/3270976" title="Lenovo Thinkpad E16 Gen 2 - 16&quot; | Ryzen 5 | 16GB | 512GB - 21M50023MX"><img alt="Bærbar - Lenovo Thinkpad E16 Gen 2 - 16&quot; | Ryzen 5 | 16GB | 512GB - 21M50023MX" class="lazy" data-src="/Images/174x116/3270976_1b843c454bf9.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29440233" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Baerbar/Lenovo-Thinkpad-E16-Gen-2-16-Ryzen-5-16GB-512GB/3270976">
+                    <h2 product-display-name class="truncate-overflow">Lenovo Thinkpad E16 Gen 2 - 16&quot; | Ryzen 5 | 16GB | 512GB</h2>
+                    <p>AMD Ryzen 5 7535HS, 16GB RAM, 512GB SSD (TCG Opal Encryption 2), Windows 11 PRO, 16" (IPS 1920x1200 (WUXGA)), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.3, Service & Support: 2 års Lenovo Depot Support + CO2 Offset 0,5 ton<br />Tastaturlayout: <strong>Nordisk</strong><br /><br /><strong>Anbefalede serviceopgraderinger:</strong></p><a style="text-decoration:none;color:inherit" href="/3066068"><table style="border-collapse:collapse;width:100%;margin-top:5px;border-top:1px solid #000;border-bottom:1px solid #000;height:30px"><tbody><tr style="height:30px"><td style="width:16.7596%;vertical-align:left;height:0"><img style="border-radius:0;float:middle" src="https://www.proshop.dk/Images/1600x1200/3066068_26392ae2bd08.jpg" alt="3 years - Lenovo Onsite Upgrade" width="90" height="51" /></td><td style="width:83.2404%;text-align:right;height:0"><h3 style="text-align:left"><strong><span style="color:#be0000">3 years - Lenovo Onsite Upgrade</span></strong></h3></td></tr></tbody></table></a><a style="text-decoration:none;color:inherit" href="/2816107"><table style="border-collapse:collapse;width:100%;margin-top:5px;border-top:1px solid #000;border-bottom:1px solid #000;height:30px"><tbody><tr style="height:30px"><td style="width:16.7596%;vertical-align:left;height:0"><img style="border-radius:0;float:middle" src="https://www.proshop.dk/Images/1600x1200/3066068_26392ae2bd08.jpg" alt="3 years - Lenovo Premier Support Upgrade" width="90" height="51" /></td><td style="width:83.2404%;text-align:right;height:0"><h3 style="text-align:left"><strong><span style="color:#be0000">3 years - Lenovo Premier Support Upgrade</span></strong></h3></td></tr></tbody></table></a><a style="text-decoration:none;color:inherit" href="/2816161"><table style="border-collapse:collapse;width:100%;margin-top:5px;border-top:1px solid #000;border-bottom:1px solid #000;height:30px"><tbody><tr style="height:30px"><td style="width:16.7596%;vertical-align:left;height:0"><img style="border-radius:0;float:middle" src="https://www.proshop.dk/Images/1600x1200/3066068_26392ae2bd08.jpg" alt="4 years - Lenovo Premier Support Upgrade" width="90" height="51" /></td><td style="width:83.2404%;text-align:right;height:0"><h3 style="text-align:left"><strong><span style="color:#be0000">4 years - Lenovo Premier Support Upgrade</span></strong></h3></td></tr></tbody></table></a>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">6.599,00 kr.</span>
+                            <span class="hidden-xs">(5.279,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3270976" />
+                            <input name="token" type="hidden" value="379aad9f5da6" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3270976">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3270976</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/Apple-MacBook-Air-136-M4-16GB-256GB-Midnight/3351376" title="Apple MacBook Air - 13.6&quot; | M4 | 16GB | 256GB | Midnight - MW123DK/A"><img alt="Bærbar - Apple MacBook Air - 13.6&quot; | M4 | 16GB | 256GB | Midnight - MW123DK/A" class="lazy" data-src="/Images/174x116/3351376_a0eb13b55b0b.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30453689" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Baerbar/Apple-MacBook-Air-136-M4-16GB-256GB-Midnight/3351376">
+                    <h2 product-display-name class="truncate-overflow">Apple MacBook Air - 13.6&quot; | M4 | 16GB | 256GB | Midnight</h2>
+                    <strong>M4</strong>, (10-Core CPU & 8-Core GPU), 16GB RAM, 256GB SSD, 13,6" (Liquid Retina med True Tone (<i>2560x1664</i>)), Wifi 6E (802.11a/b/g/n/ac/ax) + BT 5.3, <strong>Midnight</strong><br />Tastaturlayout: <strong>Dansk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">8.937,00 kr.</span>
+                            <span class="hidden-xs">(7.149,60 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3351376" />
+                            <input name="token" type="hidden" value="dc6a8b36f95d" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3351376">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3351376</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-21%</span></div></div>                <a class="show" href="/Baerbar/Lenovo-Refurbished-X1-Yoga-G3-14-Touch-Core-i7-16GB-512GB-BARGA1N-Grade/3336227" title="Lenovo Refurbished X1 Yoga G3 - 14&quot; Touch | Core i7 | 16GB | 512GB | BARGA1N Grade - L-X1Y-SCA-B003"><img alt="Bærbar - Lenovo Refurbished X1 Yoga G3 - 14&quot; Touch | Core i7 | 16GB | 512GB | BARGA1N Grade - L-X1Y-SCA-B003" class="lazy" data-src="/Images/174x116/3336227_adf4b59f8cc6.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30320964" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-default" style="color: #FEFCFF; background-color: #FC352D">SUPER DAYS</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/Lenovo-Refurbished-X1-Yoga-G3-14-Touch-Core-i7-16GB-512GB-BARGA1N-Grade/3336227">
+                    <h2 product-display-name class="truncate-overflow">Lenovo Refurbished X1 Yoga G3 - 14&quot; Touch | Core i7 | 16GB | 512GB | BARGA1N Grade</h2>
+                    Intel Core i7-8650U, 16GB RAM, 512GB SSD, Windows 10 Pro (<i>Windows 11 Ready</i>), 14" Touch (1920x1080 (Full HD)), WiFi 5 (802.11a/b/g/n/ac) + Bluetooth, Service & Support: 2 års producent garanti<br />Tastaturlayout: <strong>Nordisk</strong><br /><details><summary>Kosmetisk stand: <strong>BARGA1N</strong> <u style="color:#00f">Klik her</u> for at læse mere</summary><ul>✔ Når du vælger at købe istandsat elektronik, bidrager du til at reducere behovet for udvinding af nye råmaterialer, og mindsker samtidig mængden af elektronikaffald.<br />✔ Selvom varen er istandsat, får du et fuldt funktionsdygtigt produkt og 2 års garanti.<br />✔ Produktet er professionelt testet, dataslettet og rengjort i Danmark.</ul>Hvad kan du forvente af denne graduering?<br /><ul><li>Produktet vil vise meget synlige brugstegn, såsom ridser, buler og mærker på både enheden og skærmen. <i>(Mærker på skærmen vil være synlige, når den er tændt.)</i></li><li>50% af oprindelig mAh batterikapacitet.</li></ul></details>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">2.799,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">2.199,00 kr.</span>
+                            <span class="hidden-xs">(1.759,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3336227" />
+                            <input name="token" type="hidden" value="62a3a0011d41" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3336227">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3336227</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-53%</span></div></div>                <a class="show" href="/Baerbar/ASUS-Vivobook-Go-14-14-N100-4GB-128GB/3313692" title="ASUS Vivobook Go 14 - 14&quot; | N100 | 4GB | 128GB - E1404GA-NK026WS"><img alt="Bærbar - ASUS Vivobook Go 14 - 14&quot; | N100 | 4GB | 128GB - E1404GA-NK026WS" class="lazy" data-src="/Images/174x116/3313692_ff8bdf37ee8b.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30010032" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-default" style="color: #FEFCFF; background-color: #FC352D">SUPER DAYS</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/ASUS-Vivobook-Go-14-14-N100-4GB-128GB/3313692">
+                    <h2 product-display-name class="truncate-overflow">ASUS Vivobook Go 14 - 14&quot; | N100 | 4GB | 128GB</h2>
+                    Intel N100, 4GB RAM, 128GB SSD, Windows 11 HOME (S-Mode), 14" (IPS 1920x1080 (Full HD) 60Hz), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.0<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">2.999,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">1.399,00 kr.</span>
+                            <span class="hidden-xs">(1.119,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3313692" />
+                            <input name="token" type="hidden" value="c9614232f212" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3313692">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3313692</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-13%</span></div></div>                <a class="show" href="/Baerbar/ASUS-Zenbook-Duo-14-Touch-Core-Ultra-9-32GB-2TB/3328641" title="ASUS Zenbook Duo - 14&quot; Touch | Core Ultra 9 | 32GB | 2TB - UX8406CA-PZ068X"><img alt="Bærbar - ASUS Zenbook Duo - 14&quot; Touch | Core Ultra 9 | 32GB | 2TB - UX8406CA-PZ068X" class="lazy" data-src="/Images/174x116/3328641_d2085a3a23fe.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30261649" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Baerbar/ASUS-Zenbook-Duo-14-Touch-Core-Ultra-9-32GB-2TB/3328641">
+                    <h2 product-display-name class="truncate-overflow">ASUS Zenbook Duo - 14&quot; Touch | Core Ultra 9 | 32GB | 2TB</h2>
+                    Intel Core Ultra 9 285H, 32GB RAM, 2TB SSD, Windows 11 HOME, 14" Touch (<strong>OLED</strong> 2880x1800 (2.8K) 120Hz), Wifi 7 (802.11a/b/g/n/ac/ax/be) + BT5.4<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">19.499,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">16.799,00 kr.</span>
+                            <span class="hidden-xs">(13.439,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3328641" />
+                            <input name="token" type="hidden" value="1a9e85daa6d7" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3328641">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3328641</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/Samsung-Galaxy-Chromebook-Go-Celeron-14-HD/2978435" title="Samsung Galaxy Chromebook Go  - Celeron &amp; 14&quot; HD - XE340XDA-KA1SE"><img alt="Bærbar - Samsung Galaxy Chromebook Go  - Celeron &amp; 14&quot; HD - XE340XDA-KA1SE" class="lazy" data-src="/Images/174x116/2978435_ecaac200ba70.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S25131954" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Baerbar/Samsung-Galaxy-Chromebook-Go-Celeron-14-HD/2978435">
+                    <h2 product-display-name class="truncate-overflow">Samsung Galaxy Chromebook Go  - Celeron &amp; 14&quot; HD</h2>
+                    <strong>180° hængselsdesign</strong>, Celeron N4500 / 1.1 GHz, <strong>Chrome OS</strong>, UHD Graphics, 4 GB RAM, 32 GB eMMC, 14" 1366 x 768 (HD), <strong>Wi-Fi 6</strong>, saturn-sølv
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">2.699,00 kr.</span>
+                            <span class="hidden-xs">(2.159,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="2978435" />
+                            <input name="token" type="hidden" value="34c8ca2ed2db" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="2978435">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">2978435</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/Apple-MacBook-Air-136-M4-16GB-256GB-Silver/3351372" title="Apple MacBook Air - 13.6&quot; | M4 | 16GB | 256GB | Silver - MW0W3DK/A"><img alt="Bærbar - Apple MacBook Air - 13.6&quot; | M4 | 16GB | 256GB | Silver - MW0W3DK/A" class="lazy" data-src="/Images/174x116/3351372_cd2ff80df13d.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30453562" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Baerbar/Apple-MacBook-Air-136-M4-16GB-256GB-Silver/3351372">
+                    <h2 product-display-name class="truncate-overflow">Apple MacBook Air - 13.6&quot; | M4 | 16GB | 256GB | Silver</h2>
+                    <strong>M4</strong>, (10-Core CPU & 8-Core GPU), 16GB RAM, 256GB SSD, 13,6" (Liquid Retina med True Tone (<i>2560x1664</i>)), Wifi 6E (802.11a/b/g/n/ac/ax) + BT 5.3, <strong>Silver</strong><br />Tastaturlayout: <strong>Dansk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">8.926,00 kr.</span>
+                            <span class="hidden-xs">(7.140,80 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3351372" />
+                            <input name="token" type="hidden" value="8d9dcf6c4bdb" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3351372">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3351372</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/Apple-MacBook-Air-153-M4-16GB-256GB-Midnight/3351383" title="Apple MacBook Air - 15.3&quot; | M4 | 16GB | 256GB | Midnight - MW1L3DK/A"><img alt="Bærbar - Apple MacBook Air - 15.3&quot; | M4 | 16GB | 256GB | Midnight - MW1L3DK/A" class="lazy" data-src="/Images/174x116/3351383_109b2daa5001.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30453696" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Baerbar/Apple-MacBook-Air-153-M4-16GB-256GB-Midnight/3351383">
+                    <h2 product-display-name class="truncate-overflow">Apple MacBook Air - 15.3&quot; | M4 | 16GB | 256GB | Midnight</h2>
+                    <strong>M4</strong>, (10-Core CPU & 10-Core GPU), 16GB RAM, 256GB SSD, 15,3" (Liquid Retina med True Tone (<i>2880x1864</i>)), Wifi 6E (802.11a/b/g/n/ac/ax) + BT 5.3, <strong>Midnight</strong><br />Tastaturlayout: <strong>Dansk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">10.745,00 kr.</span>
+                            <span class="hidden-xs">(8.596,00 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3351383" />
+                            <input name="token" type="hidden" value="68528c530fad" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3351383">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3351383</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/MSI-Cyborg-15-156-RTX-3050-Core-i5-16GB-512GB/3311032" title="MSI Cyborg 15 - 15.6&quot; | RTX 3050 | Core i5 | 16GB | 512GB - Cyborg 15 A13UDX-1667NEU"><img alt="Bærbar - MSI Cyborg 15 - 15.6&quot; | RTX 3050 | Core i5 | 16GB | 512GB - Cyborg 15 A13UDX-1667NEU" class="lazy" data-src="/Images/174x116/3311032_33317ca63605.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S30018125" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-nostyle site-image-badge-default">KUN 1 TILBAGE P&#197; LAGER</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/MSI-Cyborg-15-156-RTX-3050-Core-i5-16GB-512GB/3311032">
+                    <h2 product-display-name class="truncate-overflow">MSI Cyborg 15 - 15.6&quot; | RTX 3050 | Core i5 | 16GB | 512GB</h2>
+                    <strong>GeForce RTX 3050</strong> 6GB, Intel Core i5-13420H, 16GB RAM, 512GB SSD, Windows 11 HOME, 15.6" (IPS 1920x1080 (Full HD) 144Hz), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.0<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">7.999,00 kr.</span>
+                            <span class="hidden-xs">(6.399,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3311032" />
+                            <input name="token" type="hidden" value="156b2ef36442" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3311032">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3311032</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-27%</span></div></div>                <a class="show" href="/Baerbar/HP-14-em0041no-14-Ryzen-7-16GB-512GB/3355152" title="HP 14-em0041no - 14&quot; | Ryzen 7 | 16GB | 512GB - B47BXEA#UUW"><img alt="Bærbar - HP 14-em0041no - 14&quot; | Ryzen 7 | 16GB | 512GB - B47BXEA#UUW" class="lazy" data-src="/Images/174x116/3355152_b888ee4574e2.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29992879" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-default" style="color: #FEFCFF; background-color: #FC352D">SUPER DAYS</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/HP-14-em0041no-14-Ryzen-7-16GB-512GB/3355152">
+                    <h2 product-display-name class="truncate-overflow">HP 14-em0041no - 14&quot; | Ryzen 7 | 16GB | 512GB</h2>
+                    AMD Ryzen 7 7730U, 16GB RAM, 512GB SSD, Windows 11 HOME, 14" (IPS 1920x1080 (Full HD)), Wifi 6 (802.11a/b/g/n/ac/ax) + BT5.3<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">4.999,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">3.649,00 kr.</span>
+                            <span class="hidden-xs">(2.919,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3355152" />
+                            <input name="token" type="hidden" value="1740e4e6f923" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3355152">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3355152</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/ASUS-Vivobook-16X-16-RTX-4050-Core-i7-16GB-512GB/3338213" title="ASUS Vivobook 16X - 16&quot; | RTX 4050 | Core i7 | 16GB | 512GB - K3605ZU-N1227W"><img alt="Bærbar - ASUS Vivobook 16X - 16&quot; | RTX 4050 | Core i7 | 16GB | 512GB - K3605ZU-N1227W" class="lazy" data-src="/Images/174x116/3338213_39543b2ec152.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Baerbar/ASUS-Vivobook-16X-16-RTX-4050-Core-i7-16GB-512GB/3338213">
+                    <h2 product-display-name class="truncate-overflow">ASUS Vivobook 16X - 16&quot; | RTX 4050 | Core i7 | 16GB | 512GB</h2>
+                    <strong>GeForce RTX 4050</strong> 6GB, Intel Core i7-12700H, 16GB RAM, 512GB SSD, Windows 11 HOME, 16" (IPS 1920x1200 (WUXGA) 120Hz), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.3<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">9.999,00 kr.</span>
+                            <span class="hidden-xs">(7.999,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3338213" />
+                            <input name="token" type="hidden" value="9a658f638a6c" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3338213">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3338213</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/Lenovo-LoQ-156-RTX-4060-Core-i5-24GB-1TB/3245000" title="Lenovo LoQ - 15.6&quot; | RTX 4060 | Core i5 | 24GB | 1TB - 83GS00BAMX"><img alt="Bærbar - Lenovo LoQ - 15.6&quot; | RTX 4060 | Core i5 | 24GB | 1TB - 83GS00BAMX" class="lazy" data-src="/Images/174x116/3245000_13151cdcf4da.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29512245" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-nostyle site-image-badge-default">F&#197; P&#197; LAGER</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/Lenovo-LoQ-156-RTX-4060-Core-i5-24GB-1TB/3245000">
+                    <h2 product-display-name class="truncate-overflow">Lenovo LoQ - 15.6&quot; | RTX 4060 | Core i5 | 24GB | 1TB</h2>
+                    <strong>GeForce RTX 4060</strong> 8GB, Intel Core i5-12450HX, 24GB RAM, 1TB SSD, Windows 11 HOME, 15,6" (IPS 1920x1080 (Full HD) 144Hz), Wifi 6 (802.11a/b/g/n/ac/ax) + BT5.2<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">8.499,00 kr.</span>
+                            <span class="hidden-xs">(6.799,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3245000" />
+                            <input name="token" type="hidden" value="375013c827bf" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3245000">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3245000</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-16%</span></div></div>                <a class="show" href="/Baerbar/Lenovo-LoQ-156-RTX-4060-AMD-Ryzen-7-7435HS-24GB-1TB/3265124" title="Lenovo LoQ - 15.6&quot; | RTX 4060 | AMD Ryzen™ 7 7435HS | 24GB | 1TB - 83JC0022MX"><img alt="Bærbar - Lenovo LoQ - 15.6&quot; | RTX 4060 | AMD Ryzen™ 7 7435HS | 24GB | 1TB - 83JC0022MX" class="lazy" data-src="/Images/174x116/3265124_b8aaaf9b7097.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29616987" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-default" style="color: #FEFCFF; background-color: #FC352D">SUPER DAYS</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/Lenovo-LoQ-156-RTX-4060-AMD-Ryzen-7-7435HS-24GB-1TB/3265124">
+                    <h2 product-display-name class="truncate-overflow">Lenovo LoQ - 15.6&quot; | RTX 4060 | AMD Ryzen™ 7 7435HS | 24GB | 1TB</h2>
+                    <strong>GeForce RTX 4060</strong> 8GB, AMD Ryzen™ 7 7435HS, 24GB RAM, 1TB SSD, Windows 11 HOME, 15,6" (IPS 1920x1080 (Full HD)), Wifi 6 (802.11a/b/g/n/ac/ax) + BT5.2<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">8.999,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">7.499,00 kr.</span>
+                            <span class="hidden-xs">(5.999,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3265124" />
+                            <input name="token" type="hidden" value="f9ee418586a7" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3265124">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3265124</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+                <a class="show" href="/Baerbar/ASUS-VivoBook-15X-OLED-156-Ryzen-7-16GB-512GB/3298771" title="ASUS VivoBook 15X OLED - 15.6&quot; | Ryzen 7 | 16GB | 512GB - M3504YA-L1034W"><img alt="Bærbar - ASUS VivoBook 15X OLED - 15.6&quot; | Ryzen 7 | 16GB | 512GB - M3504YA-L1034W" class="lazy" data-src="/Images/174x116/3298771_464292bb67fa.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29939153" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+
+                <a class="site-product-link" href="/Baerbar/ASUS-VivoBook-15X-OLED-156-Ryzen-7-16GB-512GB/3298771">
+                    <h2 product-display-name class="truncate-overflow">ASUS VivoBook 15X OLED - 15.6&quot; | Ryzen 7 | 16GB | 512GB</h2>
+                    AMD Ryzen 7 7730U, 16GB RAM, 512GB SSD, Windows 11 HOME, 15.6" (<strong>OLED</strong> 1920x1080 (Full HD) 60Hz), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.0<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+
+
+                                <span class="site-currency-lg">7.499,00 kr.</span>
+                            <span class="hidden-xs">(5.999,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3298771" />
+                            <input name="token" type="hidden" value="450ce281b972" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3298771">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3298771</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-39%</span></div></div>                <a class="show" href="/Baerbar/ASUS-Vivobook-16X-16-RTX-4050-Core-i5-16GB-512GB/3354848" title="ASUS Vivobook 16X - 16&quot; | RTX 4050 | Core i5 | 16GB | 512GB - V3605ZU-RP305W"><img alt="Bærbar - ASUS Vivobook 16X - 16&quot; | RTX 4050 | Core i5 | 16GB | 512GB - V3605ZU-RP305W" class="lazy" data-src="/Images/174x116/3354848_63d1925fdbd2.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-default" style="color: #FEFCFF; background-color: #FC352D">SUPER DAYS</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/ASUS-Vivobook-16X-16-RTX-4050-Core-i5-16GB-512GB/3354848">
+                    <h2 product-display-name class="truncate-overflow">ASUS Vivobook 16X - 16&quot; | RTX 4050 | Core i5 | 16GB | 512GB</h2>
+                    <strong>GeForce RTX 4050</strong> 6GB, Intel Core i5-12500H, 16GB RAM, 512GB SSD, Windows 11 HOME, 16" (IPS 1920x1200 (WUXGA) 144Hz), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.3<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">9.899,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">5.999,00 kr.</span>
+                            <span class="hidden-xs">(4.799,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3354848" />
+                            <input name="token" type="hidden" value="9d8d37e9cbe1" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3354848">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3354848</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-34%</span></div></div>                <a class="show" href="/Baerbar/MSI-Cyborg-14-14-RTX-4050-Core-i7-16GB-512GB/3311030" title="MSI Cyborg 14 - 14&quot; | RTX 4050 | Core i7 | 16GB | 512GB - Cyborg 14 A13VE-006NEU"><img alt="Bærbar - MSI Cyborg 14 - 14&quot; | RTX 4050 | Core i7 | 16GB | 512GB - Cyborg 14 A13VE-006NEU" class="lazy" data-src="/Images/174x116/3311030_87a70fd266cd.jpg" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29191555" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-default" style="color: #FEFCFF; background-color: #FC352D">SUPER DAYS</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/MSI-Cyborg-14-14-RTX-4050-Core-i7-16GB-512GB/3311030">
+                    <h2 product-display-name class="truncate-overflow">MSI Cyborg 14 - 14&quot; | RTX 4050 | Core i7 | 16GB | 512GB</h2>
+                    <strong>GeForce RTX 4050</strong> 6GB, Intel Core i7-13620H, 16GB RAM, 512GB SSD, Windows 11 HOME, 14" (1920x1200 (WUXGA) 144Hz), Wifi 6E (802.11a/b/g/n/ac/ax) + BT5.0<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">8.999,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">5.899,00 kr.</span>
+                            <span class="hidden-xs">(4.719,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3311030" />
+                            <input name="token" type="hidden" value="8c52c9d19eb7" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3311030">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3311030</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+        <li class="site-productlist-item site-customerCenterCard position-relative" product>
+            <div class="mr-2">
+<div class="site-image-discount-splash position-absolute"><div class="position-relative"><span class="position-absolute">-26%</span></div></div>                <a class="show" href="/Baerbar/ASUS-TUF-Gaming-F15-156-RTX-4070-Core-i7-16GB-1TB/3324674" title="ASUS TUF Gaming F15 - 15.6&quot; | RTX 4070 | Core i7 | 16GB | 1TB - FX507VI-LP063W"><img alt="Bærbar - ASUS TUF Gaming F15 - 15.6&quot; | RTX 4070 | Core i7 | 16GB | 1TB - FX507VI-LP063W" class="lazy" data-src="/Images/174x116/3324674_08832350ddce.png" height="116" width="174" /></a>
+                    <div data-energy data-cpn="S29268482" data-zoom="50" class="hidden pl-2 pt-2">
+                        <img /><br /><button class="btn-link p-0"><span class="site-energy-datasheet">Produktdatablad</span></button>
+                    </div>
+            </div>
+            <div class="site-productTextContainer position-relative">
+    <div class="badge-gradient-wrapper position-relative" style="overflow: hidden;" >
+        <div class="site-image-badge-container-lg" ref="badgeContainers">
+                    <span class="site-image-badge-default" style="color: #FEFCFF; background-color: #FC352D">SUPER DAYS</span>
+        </div>
+        <div class="gradient-left" style="display:none;"></div>
+        <div class="gradient-right" style="display:none;"></div>
+    </div>
+
+                <a class="site-product-link" href="/Baerbar/ASUS-TUF-Gaming-F15-156-RTX-4070-Core-i7-16GB-1TB/3324674">
+                    <h2 product-display-name class="truncate-overflow">ASUS TUF Gaming F15 - 15.6&quot; | RTX 4070 | Core i7 | 16GB | 1TB</h2>
+                    <strong>GeForce RTX 4070</strong> 8GB, Intel Core i7-13620H, 16GB RAM, 1TB SSD, Windows 11 HOME, 15.6" (IPS 1920x1200 (WUXGA) 144Hz), Wifi 6 (802.11a/b/g/n/ac/ax) + BT5.3<br />Tastaturlayout: <strong>Nordisk</strong>
+                </a>
+            </div>
+            <div class="priceContainer">
+                <div class="mt-2 price-container mb-2">
+                                <div class="presales-price d-block">Før&nbsp;<span class="site-currency-pre d-inline-block">12.299,00 kr.</span></div>
+
+
+                            <span class="site-currency-lg has-presales-price">8.999,00 kr.</span>
+                            <span class="hidden-xs">(7.199,20 kr.)</span>
+                </div>
+                <div class="d-flex justify-content-around">
+                        <form action="/Basket/AddItem" method="post" novalidate="novalidate" data-type="async-minibasket">
+                            <input name="productId" type="hidden" value="3324674" />
+                            <input name="token" type="hidden" value="a18d7a5f6616" />
+                                <button class="btn site-btn-tall site-btn-green w-100" type="submit" data-gtm-item-id="3324674">
+                                    <i class="ki ki-s pi-cart-fill"></i>&nbsp;<span class="">Køb</span>
+                                </button>
+                            <small class="mt-1 d-block hidden-xs text-center">3324674</small>
+                        </form>
+                </div>
+            </div>
+            <div class="d-flex site-stock site-stock-sm mt-2">
+                <div class="site-stock-icon site-icon-stock-in"></div>
+                <div class="site-stock-text">P&#229; lager - 1-2 dages levering</div>
+            </div>
+        </li>
+    <li class="text-center">
+    <div>
+        <ul class="pagination d-inline-block">
+                                            <li class="active"><a href="/Baerbar" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">1</a></li>
+                        <li><a href="/Baerbar?pn=2" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">2</a></li>
+                        <li><a href="/Baerbar?pn=3" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">3</a></li>
+                        <li><a href="/Baerbar?pn=4" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">4</a></li>
+                        <li><a href="/Baerbar?pn=5" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center">5</a></li>
+                            <li><a class="position-relative pull-left d-flex justify-content-center align-items-center noborder">...</a></li>
+                <li><a href="/Baerbar?pn=40" rel="follow" class="position-relative pull-left d-flex justify-content-center align-items-center" target="_self">40</a></li>
+                            <li><a href="/Baerbar?pn=2" rel="follow" class="hidden-xs position-relative pull-left d-flex justify-content-center align-items-center"><span class="position-relative pull-left d-flex justify-content-center align-items-center">&raquo;</span></a></li>
+        </ul>
+    </div>
+</li>
+</ul>
+    </div>
+
+    </main>
+</div>
+    </div>
+    <script type="module">
+    Consent.activateFor('functional', function () {
+            (function (s, o, l, v, e, m, a, t) {
+        t = 'solvemateConfig'; s[e] = s[e] || function (x, y) { (s[t] = s[t] || {})[x] = y; }; a = o.createElement(l); a.async = 1; a.src = v; o.body.appendChild(a);
+    })(window, document, 'script', 'https://widget.solvemate.com/v2/init.js', 'solvemate');
+    solvemate('projectID', '5f994edd45b0d36364c03bba');
+    if (document.getElementById("chatbot") != null) {
+        solvemate('hideBeacon', true);
+        solvemate('inlineContainerId', 'chatbot');
+        solvemate('hideGreeting', true);
+    }
+    });
+</script>
+</div>
+    <footer class="footer position-relative" role="contentinfo">
+<div class="footer__top py-4">
+    <div class="ps-container">
+        <div class="site-footer-newsletterContainer">
+
+<div class="f-white">
+    Få nyheder, tilbud og konkurrencer direkte i din mailboks
+</div>
+<div class="p-2">
+<form action="/CustomerCenter/Newsletter/Subscribe" class="input-newsletter position-relative w-100" method="get"><input name="__RequestVerificationToken" type="hidden" value="ZugGrOaYlBEiRRqP8TeG-0KZYZKK3dvDTTErm_SLKwlvmQAAimjJD3lQVokWkPFGSeg_QqoGEfawZnRwEuzvDjc8rJXPLoLRwUWx8Kd9wZY1" />        <input name="Email" class="input__round-lg w-100 pr-5" type="email" placeholder="skriv e-mail adresse">
+<input id="source" name="source" type="hidden" value="WebsiteForm" />        <button type="submit" aria-label="Newsletter Subscribe" class="input__round-btn position-absolute d-flex justify-content-center align-items-center">
+            <i class="pi-sm pi pi-send-mail rotate45"></i>
+        </button>
+</form></div>
+                <div class="socialLinksContainer">
+                    <span class="f-white pb-1">Find os på:</span>
+                    <div class="socialLinks">
+                            <a class="px-half" rel="noreferrer" href="https://www.facebook.com/proshop.dk/" target="_blank" title="Find os på: Facebook"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/facebook.svg" src="" alt="Facebook" /></a>
+                            <a class="px-half" rel="noreferrer" href="https://www.instagram.com/proshop.dk/" target="_blank" title="Find os på: Instagram"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/instagram.svg" src="" alt="Instagram" /></a>
+                            <a class="px-half" rel="noreferrer" href="https://www.tiktok.com/@proshop.dk" target="_blank" title="Find os på: TikTok"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/tiktok.svg" src="" alt="TikTok" /></a>
+                            <a class="px-half" rel="noreferrer" href="https://www.youtube.com/c/ProshopDk" target="_blank" title="Find os på: Youtube"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/youtube-logotype.svg" src="" alt="Youtube" /></a>
+                            <a class="px-half" rel="noreferrer" href="https://www.linkedin.com/company/proshop-aps/" target="_blank" title="Find os på: LinkedIn"><img class="lazy soci-icon" width="40" height="40" data-src="/Content/images/SVG/linkedin.svg" src="" alt="LinkedIn" /></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="pl-2 pr-2 ps-container">
+    <div class="ps-container__inner ps__template--footer">
+        <div class="footer__contact footer__accordion-item active">
+                <div class="display-5 footer__header d-flex"><span class="align-items-center"><i class="pi-sm pi pi-headphones-b mr-1"></i>&#197;bningstider telefon</span><button class="d-flex footer__toggle" data-toggle="true" aria-expanded="true" aria-controls="accordion__section-0"><div class="align-items-center text-left d-flex"><i class="pi-sm pi pi-headphones-b mr-1"></i>&#197;bningstider telefon</div> <i class="ki pi-xs pi-chevron-down"></i></button></div>
+                <div id="accordion__section-0" class="footer__accordion-list">
+                    <table width="100%">
+<tbody>
+<tr>
+<td>Mandag - Torsdag:</td>
+<td>08:00 - 14:00</td>
+</tr>
+<tr>
+<td>Fredag:</td>
+<td>08:00 - 14:00</td>
+</tr>
+<tr>
+<td>Weekend &amp; helligdage:</td>
+<td>Lukket</td>
+</tr>
+<tr>
+<td colspan="2">  </td>
+</tr>
+<tr>
+<td colspan="2">Find svar på ofte stillede spørgsmål i vores <span style="text-decoration: underline;"><strong><a href="/Kundeservice.htm">kundecenter</a></strong></span>, eller kontakt os på <a href="mailto:support@proshop.dk">support@proshop.dk</a>, henvendelser besvares inden for 48 timer.</td>
+</tr>
+</tbody>
+</table>
+                        <div class="pt-2"><p class="display-5 d-flex fw700 footer__display m-0">&#197;bningstider for afhentning af varer</p>Se åbningstider og adresser for Pick-up Points i København og Aarhus, <span style="text-decoration: underline;"><strong><a href="/Om-Pick-up-Points.htm">klik her</a></strong></span>.</div>
+                </div>
+        </div>
+        <div class="footer__support footer__accordion-item">
+            <div class="display-5 footer__header d-flex">
+                <span>Support</span>
+                <button class="d-flex footer__toggle" data-toggle="true" aria-expanded="false" aria-controls="accordion__section-1">
+                    Support
+                    <i class="ki-s pi-chev-right svg-fill-red"></i>
+                </button>
+            </div>
+            <div id="accordion__section-1" class="footer__accordion-list">
+                <ul class="list-unstyled arrow__list">
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Guides.htm"> Guides</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Forsendelse-og-levering.htm"> Forsendelse og levering</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Om-Pick-up-Points.htm"> Om Pick-up Points</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Reparation-Defekt.htm"> Reparation / Defekt</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Kundeservice.htm"> Kundeservice</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Handelsbetingelser.htm"> Handelsbetingelser</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Persondatapolitik.htm"> Persondatapolitik</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CSR.htm"> CSR</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__myProshop footer__accordion-item">
+            <div class="display-5 footer__header d-flex">
+                <span>Min side</span>
+                <button class="d-flex footer__toggle" data-toggle="true" aria-expanded="false" aria-controls="accordion__section-2">
+                    Min side
+                    <i class="ki-s pi-chev-right svg-fill-red"></i>
+                </button>
+            </div>
+            <div id="accordion__section-2" class="footer__accordion-list">
+                <ul class="list-unstyled arrow__list">
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter"> Mit Proshop</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter/Rma/Login"> Reklamation</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter/CustomerReturn/StartReturnCase"> Returnering</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter/Account"> K&#248;bshistorik</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/CustomerCenter/CustomerAccount/ForgotPassword"> Glemt adgangskode</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="ki-s pi-chev-right bg-black"></i>
+                            <a href="/Guide-til-fragtskader.htm"> Guide til fragtskader</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__address">
+                <div class="footer__accordion-item">
+                    <div class="display-5 footer__header d-flex">
+                        <span>Kontakt</span>
+                        <button class="d-flex footer__toggle" data-toggle="true" aria-expanded="false" aria-controls="accordion__section-3">
+                            Kontakt
+                            <i class="ki-s pi-chev-right svg-fill-red"></i>
+                        </button>
+                    </div>
+                    <div id="accordion__section-3" class="footer__accordion-list">
+                        Proshop a/s<br />Slet Møllevej 17<br />8270 Højbjerg<br />Danmark<br />DK18966239<br /><a href="mailto:support@proshop.dk">support@proshop.dk</a><br /><br />
+
+                        <ul class="list-unstyled arrow__list">
+                                <li class="d-flex align-items-center">
+                                    <i class="ki-s pi-chev-right bg-black"></i>
+                                    <a href="/Om-Proshop.htm"> Om Proshop</a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="ki-s pi-chev-right bg-black"></i>
+                                    <a href="/Erhverv"> Erhverv</a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="ki-s pi-chev-right bg-black"></i>
+                                    <a href="/Job.htm"> Job</a>
+                                </li>
+                        </ul>
+                        <div class="pt-2 clearfix">
+                            
+       <div class="menu-button-links pull-left btn-group position-relative">
+        <a id="dropdown-lang" href="#" aria-controls="languageMenu" class="familyRelationsDropdownBtn dropdown btn site-btn-between site-btn-white site-btn-hasborder dropdown-toggle langDropDownBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="ki-m pi pi-globe mr-1"></i>
+            <p>Lande</p>
+            <i class="ki-s pi-chev-right bg-black rotate90 ml-1"></i>
+        </a>
+        <ul id="languageMenu" role="menu" aria-labelledby="dropdown-lang" class="dropdown__list dropdown-menu familyRelationsDropdown langDropDown">
+                <li role="none">
+                    <a href="//www.proshop.at">
+                        proshop.at
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.de">
+                        proshop.de
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.fi">
+                        proshop.fi
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.nl">
+                        proshop.nl
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.no">
+                        proshop.no
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.pl">
+                        proshop.pl
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="//www.proshop.se">
+                        proshop.se
+                    </a>
+                </li>
+        </ul>
+    </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="footer__bottom">
+    <div class="pl-2 pr-2 ps-container">
+        <div class="d-flex footer-row__flex pt-4 pb-2 justify-content-between align-items-center">
+            <div class="text-center flex-center">
+                        <div class="d-flex mb-2 mx-1">
+                            <img class="lazy" data-src="/content/images/delivery/Postnord.svg" alt="Postnord" />
+                        </div>
+            </div>
+            <div class="text-center flex-center flex-wrap">
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/Dankort.svg" alt="Dankort" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/apple-pay.svg" alt="Apple Pay" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/google-pay.svg" alt="Google Pay" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/MobilePay.svg" alt="MobilePay" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/Visa.svg" alt="Visa" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/MasterCard.svg" alt="Mastercard" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/PayPal.svg" alt="PayPal" />
+                        </div>
+                        <div class="d-flex footer__payment mb-2">
+                            <img class="lazy" data-src="/content/images/cards-svg/Klarna.svg" alt="Klarna" />
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div id="auctionsMenu" class="d-flex pl-2 pr-2 ps-container"></div> 
+</div>
+<script type="text/javascript">
+    let footerToggle = document.querySelectorAll("[data-toggle='true']");
+    for (var i = 0; i < footerToggle.length; i++) {
+        footerToggle[i].addEventListener('click', function (e) {
+            e.currentTarget.closest('.footer__accordion-item').classList.toggle('active');
+            this.toggleAttribute('aria-expanded="true"');
+        });
+    }
+</script><input id="cookieTextFirstPart" type="hidden" value="Hos Proshop a/s bruger vi cookies til at forbedre brugeroplevelsen samt til personalisering af indhold og annoncer. Denne information deles med tredjepart, eksempelvis Google og Facebook, og cookies anvendes til anonym sporing p&#229; tv&#230;rs af hjemmesider."/>
+<input id="cookieTextLastPart" type="hidden" value="Ved at bruge vores hjemmeside, godkender du vores cookie- og persondatapolitik." />
+<input id="cookieLinkText" type="hidden" value="Du kan l&#230;se mere her" />
+<input id="cookieLink" type="hidden" value="https://www.proshop.dk/Persondatapolitik.htm" />
+<input id="cookieAcceptButtonText" type="hidden" value="OK" /></footer>
+    
+<div class="modal--custom modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true" data-url="/CustomerCenter/CustomerAccount/TopLogin">
+    <div class="modal-dialog position-relative" role="document">
+        <div class="modal-body position-relative"><button type="button" class="login-modal--close d-flex align-items-center justify-content-end position-absolute" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="pi pi-close"></i></button><div id="modalData"><div class="site-spinner mt-1 text-center"></div></div></div>
+    </div>
+</div>
+    <div id="fixedBottomMessage"></div>
+    
+    
+    
+<link rel="preload" href="/dist/Proshop/under.422943e7.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/dist/under.422943e7.css"></noscript>
+
+
+    <script type="text/javascript" language="javascript">
+        var rsa;var raptorLoaded = function (raptor) { rsa = raptor; raptor.initialize({ customerID: "5875", productIdParamIndex: 2, eventTypeParamIndex: 1, useCookies: Consent.isValid('marketing') });
+            var raptorUserId = '';var userId = $('#minibasket').data('customerid');
+            console.log("Raptor **************: " + userId);if (raptorUserId.length > 0) userId = raptorUserId;else if (userId === '0') userId = ''; raptor.trackEvent("visit", "", "", "", "", "", userId, "", "", "", "", "");
+        };
+    </script>
+
+</body>
+
+ 
+ 
+<script type="text/javascript">
+var Consent = { cookieWarning: false, validCategories: ["functional", "statistic", "marketing"] };window.dataLayer = window.dataLayer || [];function gtag() { dataLayer.push(arguments); }gtag('consent', 'default', {'ad_storage': 'denied','ad_user_data': 'denied','ad_personalization': 'denied','analytics_storage': 'denied','wait_for_update': 2000 });if (navigator.userAgent.includes("CookieInformationScanner")) { initCookieInf(); }else if (document.cookie.indexOf('CookieInformationConsent=') < 0) { window.addEventListener('mousemove', initCookieInf);window.addEventListener('scroll', initCookieInf);window.addEventListener('keydown', initCookieInf);} else { initCookieInf();} function initCookieInf() { window.removeEventListener('mousemove', initCookieInf);window.removeEventListener('scroll', initCookieInf);window.removeEventListener('keydown', initCookieInf);var sc = document.createElement('script');sc.type = 'text/javascript';sc.id = 'CookieConsent';sc.defer = true;sc.src = 'https://policy.app.cookieinformation.com/uc.js';sc.dataset.culture = 'DA';sc.dataset.gcmVersion = '2.0';document.head.appendChild(sc);} Consent.cookieWarning = true;Consent.isValid = function (category) { try { return CookieInformation.getConsentGivenFor('cookie_cat_' + category); } catch { return false; } };Consent.run = function (category, callback) { if (Consent.isValid(category)) { callback(); } };Consent.activateFor = function (category, callback) { if (Consent.isValid(category)) { callback(); } else { window.addEventListener('CookieInformationConsentGiven', function () { Consent.run(category, callback) }); } };
+</script>
+ </html>
